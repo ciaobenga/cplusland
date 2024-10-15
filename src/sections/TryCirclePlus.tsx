@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { Rocket, CreditCard, Zap } from 'lucide-react'
+import { CreditCard } from 'lucide-react'
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -17,7 +17,7 @@ const FeatureItem: React.FC<{ icon: React.ReactNode; text: string }> = ({ icon, 
   </div>
 )
 
-export default function TryCirclePlusSection() {
+export const TryCirclePlusSection = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
 
   useEffect(() => {

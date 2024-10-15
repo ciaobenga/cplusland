@@ -7,7 +7,7 @@ import { Menu } from 'lucide-react'
 import Link from 'next/link'
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
-export default function Header() {
+export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
@@ -19,7 +19,7 @@ export default function Header() {
   }, [])
 
   return (
-     <header className={`sticky top-0 sm:top-4 z-50 w-full sm:w-[95%] md:w-5/6 lg:w-6/12 mx-auto transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'}`}>
+     <header className={`sticky top-0 z-50 w-full sm:w-[95%] md:w-5/6 lg:w-6/12 mx-auto transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'}`}>
           <div className={`w-full rounded-lg bg-black/70 border border-white/15 transition-all duration-300 overflow-hidden px-4 sm:px-2 lg:px-8 backdrop-blur`}>
                <div className="flex items-center justify-between py-2 sm:py-4">
                     <div className='h-10 w-10 rounded-lg inline-flex justify-center items-center '>
@@ -43,7 +43,9 @@ export default function Header() {
                               Company
                          </Link>
                     </nav>
-                    <Button className="hidden md:block bg-[#5328f3] text-white hover:bg-[#6942f6]">Book Demo</Button>
+                    <Link href='https://calendly.com/circleplus-io/demo' target='_blank'>
+                         <Button className="hidden md:block bg-[#5328f3] text-white hover:bg-[#6942f6]">Book Demo</Button>
+                    </Link>
                     <div className="md:hidden">
                          <Sheet>
                               <SheetTrigger asChild>
@@ -62,7 +64,9 @@ export default function Header() {
                                         <Link href="/about" className="text-sm font-medium text-gray-300 hover:text-white">
                                              Company
                                         </Link>
-                                        <Button className="w-full bg-[#5328f3] text-white hover:bg-[#6942f6]">Book Demo</Button>
+                                        <Link href="https://calendly.com/circleplus-io/demo" target='_blank'>
+                                             <Button className="w-full bg-[#5328f3] text-white hover:bg-[#6942f6]">Book Demo</Button>
+                                        </Link>
                                    </nav>
                               </SheetContent>
                          </Sheet>

@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 import Techstars from '@/assets/techstars.png';
+import { CoFounder } from '@/components/CoFounder';
 
 export const Hero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
@@ -21,7 +22,7 @@ export const Hero = () => {
   }, [])
 
   return (
-     <section className="flex items-center relative -mt-[7rem] py-20">
+     <section className="flex items-center relative -mt-[8rem] py-20">
           <div className="container h-screen">
                <div
                     className="absolute inset-0 pointer-events-none"
@@ -33,6 +34,7 @@ export const Hero = () => {
                     <div className="h-full w-full bg-[url('/grid.svg')] opacity-20" />
                </div>
                <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-center relative z-10 space-y-6">
+                    <CoFounder />
                     <div className="flex justify-center items-center py-4">
                          <p className="text-center font-medium md:text-sm text-xs px-6 py-1 text-gray-400 rounded-full bg-white/10 border border-white/25">
                               We've Officially Launched
@@ -57,7 +59,7 @@ export const Hero = () => {
                     >
                          Circle+ builds AI agents that take the drudgery out of tracking metrics so that startup founders can focus on nailing them.
                     </motion.p>
-                    <a href="#">
+                    <a href="https://app.circleplus.io" target="_blank">
                          <motion.button
                               className="bg-[#5328f3] text-white py-2 px-6 rounded-lg text-base font-medium hover:bg-[#6942f6] transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                               initial={{ opacity: 0, y: -20 }}

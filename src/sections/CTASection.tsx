@@ -10,7 +10,7 @@ const fadeInUp = {
   transition: { duration: 0.6 }
 }
 
-export default function CTASection() {
+export const CTASection = () => {
   const [email, setEmail] = useState('')
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -24,7 +24,7 @@ export default function CTASection() {
   return (
     <section className="py-20 px-4 bg-gradient-to-b from-transparent to-black">
       <div className="container mx-auto max-w-4xl">
-        <motion.div 
+        <motion.div
           className="bg-black rounded-lg p-8 shadow-lg overflow-hidden relative"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

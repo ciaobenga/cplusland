@@ -24,7 +24,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, icon }) =
     if (cardRef.current) {
       const { width, height } = cardRef.current.getBoundingClientRect()
       const perimeter = 2 * (width + height)
-      
+
       glowControls.start({
         strokeDashoffset: [perimeter, 0],
         transition: {
@@ -86,7 +86,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, icon }) =
   )
 }
 
-export default function FeaturesSection() {
+export const FeaturesSection = () => {
   const features = [
     {
       title: "Slice & Dice",
@@ -106,17 +106,17 @@ export default function FeaturesSection() {
   ]
 
   return (
-    <section className="py-12 sm:py-16 md:py-20 px-4 bg-gradient-to-b from-black to-transparent">
+    <section className="py-12 sm:py-16 md:py-18 px-4 bg-gradient-to-b from-black to-transparent">
       <div className="container mx-auto">
         <motion.header className="mb-8 sm:mb-12 md:mb-16" variants={fadeInUp}>
           <p className="text-xs sm:text-sm uppercase tracking-wider mb-2 font-medium text-[#6e48fb]">
             Features
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 md:mb-8 bg-clip-text text-transparent bg-gradient-to-r from-gray-400 to-gray-300 leading-tight">
-            Empower Your Business
+            Empower Your Startup
           </h2>
         </motion.header>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {features.map((feature, index) => (
             <FeatureCard
               key={index}

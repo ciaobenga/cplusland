@@ -19,7 +19,7 @@ const fadeInUp = {
 }
 
 const PricingCard: React.FC<PricingCardProps> = ({ title, monthlyPrice, yearlyPrice, features, isElite = false, isYearly }) => {
-  const price = isYearly ? yearlyPrice * 12 : monthlyPrice
+  const price = isYearly ? monthlyPrice * 10 : monthlyPrice
   const discount = ((1 - (yearlyPrice * 12) / (monthlyPrice * 12)) * 100).toFixed(0)
 
   return (
@@ -45,15 +45,22 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, monthlyPrice, yearlyPr
           </li>
         ))}
       </ul>
-      <motion.button
-        className={`w-full py-3 px-4 rounded-lg text-white font-semibold transition-colors duration-300 ${
-          isElite ? 'bg-[#5328f3] hover:bg-[#6942f6]' : 'bg-black hover:bg-white hover:text-black border border-white/30'
-        }`}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
+      <a
+        href={
+          isElite ? 'https://buy.stripe.com/dR6g302E81qQefS8wx' : 'https://buy.stripe.com/28o6sqa6A0mM8Vy4gg'
+        }
+        target='_blank'
       >
-        Get Started
-      </motion.button>
+        <motion.button
+          className={`w-full py-3 px-4 rounded-lg text-white font-semibold transition-colors duration-300 ${
+            isElite ? 'bg-[#5328f3] hover:bg-[#6942f6]' : 'bg-black hover:bg-white hover:text-black border border-white/30'
+          }`}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          Get Started
+        </motion.button>
+      </a>
     </motion.div>
   )
 }
