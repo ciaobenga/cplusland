@@ -2,7 +2,6 @@
 
 import { Sparkles, BarChart2 } from "lucide-react"
 import { motion } from "framer-motion"
-import Image from "next/image"
 import { useEffect, useState } from "react"
 
 export const ChartSection = () => {
@@ -85,7 +84,7 @@ export const ChartSection = () => {
 
                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                                    <motion.div
-                                        className="flex items-center space-x-2 bg-black rounded-md p-3 sm:p-4 hover:bg-[#5328f3] transition-colors z-20 border border-white/50 hover:border-none"
+                                        className="flex items-center space-x-2 bg-transparent rounded-md p-3 sm:p-4 transition-colors z-20 border border-white/50"
                                         whileHover={{ scale: 1.05 }}
                                         whileTap={{ scale: 0.95 }}
                                    >
@@ -93,7 +92,7 @@ export const ChartSection = () => {
                                         <span className="text-white font-medium text-sm sm:text-base">Circle+ Desk</span>
                                    </motion.div>
                                    <motion.div
-                                        className="flex items-center space-x-2 bg-black rounded-md p-3 sm:p-4 hover:bg-[#5328f3] transition-colors z-20 border border-white/50 hover:border-none"
+                                        className="flex items-center space-x-2 bg-transparent rounded-md p-3 sm:p-4 transition-colors z-20 border border-white/50"
                                         whileHover={{ scale: 1.05 }}
                                         whileTap={{ scale: 0.95 }}
                                    >
@@ -128,7 +127,6 @@ export const ChartSection = () => {
                                                        width={400}
                                                        height={300}
                                                        alt="Goalseek"
-                                                       className=""
                                                   />
                                              </div>
                                         </div>

@@ -4,18 +4,18 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent } from "@/components/ui/dialog"
-import { Mic, MicOff, Video, VideoOff, PhoneOff } from 'lucide-react'
+import { Mic, MicOff, PhoneOff, X } from 'lucide-react'
 import Image from 'next/image'
 
-const InfiniteGlow = ({ children }: { children: React.ReactNode }) => (
+const GlassGlow = ({ children }: { children: React.ReactNode }) => (
   <div className="relative">
     <motion.div
       className="absolute inset-0 rounded-full"
       animate={{
         boxShadow: [
-          '0 0 0 0px rgba(59, 130, 246, 0.6)',
-          '0 0 0 10px rgba(59, 130, 246, 0.4)',
-          '0 0 0 20px rgba(59, 130, 246, 0.2)',
+          '0 0 0 0px rgba(59, 130, 246, 0.3)',
+          '0 0 0 10px rgba(59, 130, 246, 0.2)',
+          '0 0 0 20px rgba(59, 130, 246, 0.1)',
           '0 0 0 30px rgba(59, 130, 246, 0)',
         ],
       }}
@@ -46,18 +46,18 @@ export const CoFounder = () => {
                     onHoverStart={() => setIsHovered(true)}
                     onHoverEnd={() => setIsHovered(false)}
                     onMouseMove={(e) => {
-                    const rect = e.currentTarget.getBoundingClientRect()
-                    setMousePosition({
-                         x: e.clientX - rect.left,
-                         y: e.clientY - rect.top
-                    })
+                         const rect = e.currentTarget.getBoundingClientRect()
+                         setMousePosition({
+                              x: e.clientX - rect.left,
+                              y: e.clientY - rect.top
+                         })
                     }}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                >
-                    <InfiniteGlow>
-                         <motion.div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 bg-blue-500 rounded-full shadow-lg flex items-center justify-center overflow-hidden">
-                              <Image
+                    <GlassGlow>
+                         <motion.div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-white border-none bg-opacity-50 backdrop-filter backdrop-blur-sm rounded-full shadow-lg flex items-center justify-center overflow-hidden">
+                              <img
                                    src="/co_founder_icon.png"
                                    alt="Co.Founder"
                                    width={100}
@@ -65,22 +65,22 @@ export const CoFounder = () => {
                                    className="object-cover rounded-full w-full h-full"
                               />
                          </motion.div>
-                    </InfiniteGlow>
+                    </GlassGlow>
                     <AnimatePresence>
                          {isHovered && (
                               <motion.div
-                                   className="absolute bg-white text-black px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm whitespace-nowrap pointer-events-none flex items-center gap-2"
+                                   className="border-none absolute bg-white bg-opacity-50 backdrop-filter backdrop-blur-sm text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm whitespace-nowrap pointer-events-none flex items-center gap-2"
                                    initial={{ opacity: 0 }}
                                    animate={{
                                         opacity: 1,
-                                        x: mousePosition.x + 0,
+                                        x: mousePosition.x + 10,
                                         y: mousePosition.y - 10
                                    }}
                                    exit={{ opacity: 0 }}
                                    transition={{ duration: 0.4 }}
                               >
                                    <Mic className="w-4 h-4" />
-                                   <span className="bg-gradient-to-r from-black to-gray-600 bg-clip-text text-transparent font-semibold">
+                                   <span className="font-semibold">
                                         Click to Talk
                                    </span>
                               </motion.div>
@@ -91,58 +91,58 @@ export const CoFounder = () => {
                <AnimatePresence>
                     {isOpen && (
                          <Dialog open={isOpen} onOpenChange={setIsOpen}>
-                              <DialogContent className="sm:max-w-[80vw] md:max-w-[50vw] lg:max-w-[70vw] h-[70vh] mx-auto bg-black text-white border border-white/50">
+                              <DialogContent className="sm:max-w-[80vw] md:max-w-[50vw] lg:max-w-[70vw] h-[70vh] mx-auto bg-white bg-opacity-10 backdrop-filter backdrop-blur border-none">
                                    <motion.div
-                                        className="h-full flex flex-col"
+                                        className="h-full flex flex-col  rounded-lg overflow-hidden relative"
                                         initial={{ opacity: 0, scale: 0.9 }}
                                         animate={{ opacity: 1, scale: 1 }}
                                         exit={{ opacity: 0, scale: 0.9 }}
                                         transition={{ duration: 0.3 }}
                                    >
-                                   <div className="flex-grow relative overflow-hidden rounded-lg">
-                                        <div className="relative w-full h-full bg-black flex items-center justify-center">
-                                             <InfiniteGlow>
-                                                  <motion.div
-                                                       initial={{ opacity: 0 }}
-                                                       animate={{ opacity: 1 }}
-                                                       transition={{ duration: 0.5 }}
+                                        <div className="flex-grow relative overflow-hidden rounded-t-lg">
+                                             <div className="relative w-full h-full flex items-center justify-center">
+                                                  <GlassGlow>
+                                                       <motion.div
+                                                            initial={{ opacity: 0 }}
+                                                            animate={{ opacity: 1 }}
+                                                            transition={{ duration: 0.5 }}
+                                                       >
+                                                            <img
+                                                                 src="/co_founder_icon.png"
+                                                                 alt="Co.Founder"
+                                                                 width={200}
+                                                                 height={200}
+                                                                 className="rounded-full w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56"
+                                                            />
+                                                       </motion.div>
+                                                  </GlassGlow>
+                                             </div>
+                                        </div>
+                                        <div className="p-2 sm:p-3 md:p-4 rounded-b-lg">
+                                             <div className="flex justify-center space-x-2 sm:space-x-3 md:space-x-4">
+                                                  <Button
+                                                       variant="outline"
+                                                       size="icon"
+                                                       className={`rounded-full w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 backdrop-filter backdrop-blur-md border border-white border-opacity-30 ${isMuted ? 'text-red-500' : 'text-white'}`}
+                                                       onClick={toggleMute}
                                                   >
-                                                       <Image
-                                                            src="/co_founder_icon.png"
-                                                            alt="Co.Founder"
-                                                            width={200}
-                                                            height={200}
-                                                            className="rounded-full w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56"
-                                                       />
-                                                  </motion.div>
-                                             </InfiniteGlow>
+                                                       {isMuted ? <MicOff className="h-5 w-5 sm:h-6 sm:w-6" /> : <Mic className="h-5 w-5 sm:h-6 sm:w-6" />}
+                                                  </Button>
+                                                  <Button
+                                                       variant="destructive"
+                                                       size="icon"
+                                                       className="rounded-full w-10 h-10 sm:w-12 sm:h-12 bg-red-500 bg-opacity-70 hover:bg-opacity-100 text-white backdrop-filter backdrop-blur-md"
+                                                       onClick={endCall}
+                                                  >
+                                                       <PhoneOff className="h-5 w-5 sm:h-6 sm:w-6" />
+                                                  </Button>
+                                             </div>
                                         </div>
-                                   </div>
-                                   <div className="bg-black p-2 sm:p-3 md:p-4 rounded-b-lg">
-                                        <div className="flex justify-center space-x-2 sm:space-x-3 md:space-x-4">
-                                             <Button
-                                                  variant="outline"
-                                                  size="icon"
-                                                  className={`rounded-full w-10 h-10 sm:w-12 sm:h-12 ${isMuted ? 'bg-red-500 text-white' : 'bg-black text-white'}`}
-                                                  onClick={toggleMute}
-                                             >
-                                                  {isMuted ? <MicOff className="h-5 w-5 sm:h-6 sm:w-6" /> : <Mic className="h-5 w-5 sm:h-6 sm:w-6" />}
-                                             </Button>
-                                             <Button
-                                                  variant="destructive"
-                                                  size="icon"
-                                                  className="rounded-full w-10 h-10 sm:w-12 sm:h-12 bg-red-500 hover:bg-red-600 text-white"
-                                                  onClick={endCall}
-                                             >
-                                                  <PhoneOff className="h-5 w-5 sm:h-6 sm:w-6" />
-                                             </Button>
-                                        </div>
-                                   </div>
                                    </motion.div>
                               </DialogContent>
                          </Dialog>
                     )}
                </AnimatePresence>
           </div>
-     )
+     );
 }

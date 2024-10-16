@@ -20,7 +20,7 @@ export const Header = () => {
 
   return (
      <header className={`sticky top-0 z-50 w-full sm:w-[95%] md:w-5/6 lg:w-6/12 mx-auto transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'}`}>
-          <div className={`w-full rounded-lg bg-black/70 border border-white/15 transition-all duration-300 overflow-hidden px-4 sm:px-2 lg:px-8 backdrop-blur`}>
+          <div className={`w-full rounded-lg border border-white/15 transition-all duration-300 overflow-hidden px-4 sm:px-2 lg:px-8 backdrop-blur`}>
                <div className="flex items-center justify-between py-2 sm:py-4">
                     <div className='h-10 w-10 rounded-lg inline-flex justify-center items-center '>
                          <a href="/">

@@ -67,10 +67,8 @@ export const Footer = () => {
         >
           <p className="text-gray-400 text-sm mb-4 sm:mb-0">&copy; {new Date().getFullYear()} Circle+. All rights reserved.</p>
           <div className="flex space-x-4">
-            <SocialIcon href="https://facebook.com" icon={<Facebook size={20} />} />
-            <SocialIcon href="https://twitter.com" icon={<Twitter size={20} />} />
-            <SocialIcon href="https://instagram.com" icon={<Instagram size={20} />} />
-            <SocialIcon href="https://linkedin.com" icon={<Linkedin size={20} />} />
+            <SocialIcon href="https://x.com/circleplusxyz" icon={<Twitter size={20} />} />
+            <SocialIcon href="https://www.linkedin.com/company/circle-plus/posts/?feedView=all" icon={<Linkedin size={20} />} />
           </div>
         </motion.div>
       </div>
