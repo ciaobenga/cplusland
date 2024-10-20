@@ -6,8 +6,10 @@ import { animate, motion, useMotionTemplate, useMotionValue, ValueAnimationTrans
 import { ScrollParallax } from "react-just-parallax";
 import { DotLottieCommonPlayer, DotLottiePlayer } from "@dotlottie/react-player";
 import productImage from '@/assets/product_image.png';
-import dartImage from '@/assets/dart_metrics.gif';
-import tractionImage from '@/assets/traction_metrics.gif';
+import dartGif from '@/assets/dart_metrics.gif';
+import tractionGif from '@/assets/traction_metrics.gif';
+import tractionImage from '@/assets/traction_image.png';
+import dartImage from '@/assets/dart_chart.png';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -28,6 +30,7 @@ const tabs = [
        backgroundPositionX: 0,
        backgroundPositionY: 0,
        backgroundSizeX: 150,
+       image: dartImage.src,
      },
      {
        icon: "/assets/lottie/vroom.lottie",
@@ -36,6 +39,7 @@ const tabs = [
        backgroundPositionX: 98,
        backgroundPositionY: 100,
        backgroundSizeX: 135,
+       image: tractionImage.src,
      },
      {
        icon: "/assets/lottie/stars.lottie",
@@ -44,6 +48,7 @@ const tabs = [
        backgroundPositionX: 100,
        backgroundPositionY: 27,
        backgroundSizeX: 177,
+       image: productImage.src,
      },
 ];
 
@@ -84,21 +89,31 @@ const FeatureTab = (tab: (typeof tabs)[number]) => {
        dotLottieRef.current.play();
      }
      return (
-       <div onMouseEnter={handleTabHover} className="border border-[#3700ff]/25 flex p-2.5 rounded-lg gap-2.5 items-center flex-1 relative">
-         <motion.div ref={tabRef} style={{maskImage:maskImage}} className="absolute inset-0 -m-px border border-[#5328f3]/50 rounded-md"></motion.div>
-         <div className="h-12 w-12 border border-[#3700ff]/25 rounded-md inline-flex items-center justify-center">
-           <DotLottiePlayer
-             ref={dotLottieRef}
-             src={tab.icon}
-             className="h-5 w-5"
-             autoplay
-           />
-         </div>
-         <div className="font-medium">{tab.title}</div>
-         {tab.isNew &&  (
-           <div className="text-xs rounded-md px-2 py-0.5 bg-[#5328f3] text-white font-semibold">new</div>
-         )}
-       </div>
+          <div onMouseEnter={handleTabHover} className=" w-full rounded-lg  gap-2.5 flex flex-col">
+               <div className=" border border-[#3700ff]/25 rounded-lg flex items-center gap-2.5 p-2.5 flex-1 relative">
+                    <motion.div ref={tabRef} style={{maskImage:maskImage}} className="absolute inset-0 -m-px border border-[#5328f3]/50 rounded-md"></motion.div>
+                    <div className="h-12 w-12 border border-[#3700ff]/25 rounded-md inline-flex items-center justify-center">
+                         <DotLottiePlayer
+                              ref={dotLottieRef}
+                              src={tab.icon}
+                              className="h-5 w-5"
+                              autoplay
+                         />
+                    </div>
+                    <div className="font-medium">{tab.title}</div>
+                    {tab.isNew &&  (
+                         <div className="text-xs rounded-md px-2 py-0.5 bg-[#5328f3] text-white font-semibold">new</div>
+                    )}
+               </div>
+               <div className="sm:hidden border border-[#5328f3]/25 py-2.5 rounded-lg bg-black flex items-center justify-center">
+                    <img
+                         src={tab.image}
+                         className="rounded-lg border border-[#5328f3]/25"
+                         width={300}
+                         alt="Dart Metrics"
+                    />
+               </div>
+          </div>
      )
 }
 
@@ -135,34 +150,32 @@ export const Features = () => {
                               </motion.header>
                               <div className="mt-10 flex flex-col gap-3 lg:flex-row">
                                    {
-                                   tabs.map(tab => (
-                                   <FeatureTab {...tab} key={tab.title}/>
-                                   ))
+                                        tabs.map(tab => (
+                                             <FeatureTab {...tab} key={tab.title}/>
+                                        ))
                                    }
                               </div>
-                              <div className="relative border border-[#5328f3]/50 p-2.5 rounded-lg mt-3">
+                              <div className="relative md:border border-[#5328f3]/50 p-2.5 rounded-lg mt-3">
                                    <div
-                                        className="aspect-video bg-cover border border-[#5328f3]/50 rounded-lg"
+                                        className="aspect-video bg-cover border border-[#5328f3]/50 rounded-lg hidden md:block"
                                         style={{
-                                        backgroundImage:`url(${productImage.src})`,
+                                             backgroundImage:`url(${productImage.src})`,
                                         }}
                                    >
                                         <ScrollParallax isAbsolutelyPositioned>
                                              <div className="absolute hidden md:block -left-[10rem] bottom-[1rem] border border-[#5328f3]/50 p-1 rounded-lg bg-gray-900">
-                                                  
                                                   <img
-                                                       src={dartImage.src}
+                                                       src={dartGif.src}
                                                        className="rounded-lg"
                                                        width={300}
                                                        alt="Dart Metrics"
                                                   />
-                                                  
                                              </div>
                                         </ScrollParallax>
                                         <ScrollParallax isAbsolutelyPositioned>
                                              <div className="absolute hidden md:block -right-[10rem] top-[1rem] rounded-lg bg-transparent">
                                                   <img
-                                                       src={tractionImage.src}
+                                                       src={tractionGif.src}
                                                        className="border border-[#5328f3]/50 rounded-lg"
                                                        width={300}
                                                        alt="Traction Metrics"

@@ -1,0 +1,22 @@
+[debug] [2024-10-20T22:00:33.668Z] ----------------------------------------------------------------------
+[debug] [2024-10-20T22:00:33.675Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-10-20T22:00:33.675Z] CLI Version:   13.22.1
+[debug] [2024-10-20T22:00:33.676Z] Platform:      win32
+[debug] [2024-10-20T22:00:33.676Z] Node Version:  v22.6.0
+[debug] [2024-10-20T22:00:33.676Z] Time:          Mon Oct 21 2024 00:00:33 GMT+0200 (Central Africa Time)
+[debug] [2024-10-20T22:00:33.676Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-20T22:00:33.887Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-20T22:00:33.888Z] > authorizing via signed-in user (cr8veconnect@gmail.com)
+[debug] [2024-10-20T22:00:33.888Z] [iam] checking project circleplus-xyz for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-10-20T22:00:33.890Z] Checked if tokens are valid: true, expires at: 1729464262455
+[debug] [2024-10-20T22:00:33.890Z] Checked if tokens are valid: true, expires at: 1729464262455
+[debug] [2024-10-20T22:00:33.892Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/circleplus-xyz:testIamPermissions [none]
+[debug] [2024-10-20T22:00:33.893Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/circleplus-xyz:testIamPermissions x-goog-quota-user=projects/circleplus-xyz
+[debug] [2024-10-20T22:00:33.893Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/circleplus-xyz:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-10-20T22:00:35.857Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/circleplus-xyz:testIamPermissions 200
+[debug] [2024-10-20T22:00:35.857Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/circleplus-xyz:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-10-20T22:00:35.857Z] Checked if tokens are valid: true, expires at: 1729464262455
+[debug] [2024-10-20T22:00:35.857Z] Checked if tokens are valid: true, expires at: 1729464262455
+[debug] [2024-10-20T22:00:35.858Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/circleplus-xyz [none]
+[debug] [2024-10-20T22:00:36.655Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/circleplus-xyz 200

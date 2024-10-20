@@ -33,13 +33,13 @@ export const Header = () => {
                          </a>
                     </div>
                     <nav className="hidden md:flex items-center justify-between space-x-6">
-                         <Link href="/features" className="text-sm font-medium text-gray-300 hover:text-white">
+                         <Link href="/#Features" className="text-sm font-medium text-gray-300 hover:text-white">
                               Features
                          </Link>
-                         <Link href="/about" className="text-sm font-medium text-gray-300 hover:text-white">
+                         <Link href="/resources" className="text-sm font-medium text-gray-300 hover:text-white">
                               Resources
                          </Link>
-                         <Link href="/pricing" className="text-sm font-medium text-gray-300 hover:text-white">
+                         <Link href="/#Pricing" className="text-sm font-medium text-gray-300 hover:text-white">
                               Pricing
                          </Link>
                     </nav>
@@ -55,13 +55,13 @@ export const Header = () => {
                               </SheetTrigger>
                               <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-gray-950 text-white">
                                    <nav className="flex flex-col space-y-4 mt-6">
-                                        <Link href="/features" className="text-sm font-medium text-gray-300 hover:text-white">
+                                        <Link href="/#Features" className="text-sm font-medium text-gray-300 hover:text-white">
                                              Features
                                         </Link>
-                                        <Link href="/about" className="text-sm font-medium text-gray-300 hover:text-white">
+                                        <Link href="/resources" className="text-sm font-medium text-gray-300 hover:text-white">
                                              Resources
                                         </Link>
-                                        <Link href="/pricing" className="text-sm font-medium text-gray-300 hover:text-white">
+                                        <Link href="/#Pricing" className="text-sm font-medium text-gray-300 hover:text-white">
                                              Pricing
                                         </Link>
                                         <Link href="https://calendly.com/circleplus-io/demo" target='_blank'>

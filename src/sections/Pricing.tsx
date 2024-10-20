@@ -69,7 +69,7 @@ export const PricingSection = () =>  {
   const [isYearly, setIsYearly] = useState(false)
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-transparent to-black">
+    <section id="Pricing" className="py-20 px-4 bg-gradient-to-b from-transparent to-black">
       <div className="container mx-auto">
         <motion.header className="mb-16 text-center" variants={fadeInUp}>
           <p className="text-sm uppercase tracking-wider mb-2 font-medium text-[#6e48fb]">
