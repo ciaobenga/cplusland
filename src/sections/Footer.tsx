@@ -81,7 +81,7 @@ export const Footer = () => {
           </div>
           <div className="flex items-center text-gray-400">
             <Mail size={16} className="mr-2" />
-            <a href="mailto:info@circleplus.xyz" className="hover:text-white transition-colors duration-300">info@circleplus.xyz</a>
+            <a href="mailto:main@circleplus.xyz" className="hover:text-white transition-colors duration-300">main@circleplus.xyz</a>
           </div>
         </div>
       </div>

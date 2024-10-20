@@ -108,7 +108,7 @@ export const FeaturesSection = () => {
   return (
     <section className="py-12 sm:py-16 md:py-18 px-4 bg-gradient-to-b from-black to-transparent">
       <div className="container mx-auto">
-        <motion.header className="mb-8 sm:mb-12 md:mb-16" variants={fadeInUp}>
+        <motion.header className="mb-8 sm:mb-12 md:mb-16 text-center" variants={fadeInUp}>
           <p className="text-xs sm:text-sm uppercase tracking-wider mb-2 font-medium text-[#6e48fb]">
             Features
           </p>

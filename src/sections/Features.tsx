@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from "react";
+import Techstars from '@/assets/techstars.png';
 import { animate, motion, useMotionTemplate, useMotionValue, ValueAnimationTransition } from "framer-motion";
 import { ScrollParallax } from "react-just-parallax";
 import { DotLottieCommonPlayer, DotLottiePlayer } from "@dotlottie/react-player";
@@ -106,14 +107,25 @@ export const Features = () => {
      return (
           <section className='flex items-center relative py-20'>
                <div className='container'>
-                    <div className=" text-white min-h-screen p-8">
+                    <div className=" text-white min-h-screen">
                          <motion.div
                               className="max-w-7xl mx-auto"
                               initial="initial"
                               animate="animate"
                               variants={staggerChildren}
                          >
-                              <motion.header className="mb-16" variants={fadeInUp}>
+                              <motion.div className="flex items-center justify-center mb-16"
+                                   initial={{ opacity: 0, y: -20 }}
+                                   animate={{ opacity: 1, y: 0 }}
+                                   transition={{ duration: 0.8, delay: 0.6 }}>
+                                   <img
+                                        src={Techstars.src}
+                                        width={400}
+                                        alt="Techstars '24"
+                                        className=''
+                                   />
+                              </motion.div>
+                              <motion.header className="mb-16 text-center" variants={fadeInUp}>
                                    <p className="text-sm uppercase tracking-wider mb-2 font-medium text-[#6e48fb]">
                                         Master your Metrics
                                    </p>
@@ -136,22 +148,22 @@ export const Features = () => {
                                         }}
                                    >
                                         <ScrollParallax isAbsolutelyPositioned>
-                                             <div className="absolute hidden md:block -left-[10rem] bottom-[1rem] border border-white/80 p-1 rounded-lg bg-gray-900">
-                                                  <div className="bg-[#191919] border border-white/80 rounded-lg p-2.5">
-                                                       <img
-                                                            src={dartImage.src}
-                                                            className="rounded-lg"
-                                                            width={300}
-                                                            alt="Dart Metrics"
-                                                       />
-                                                  </div>
+                                             <div className="absolute hidden md:block -left-[10rem] bottom-[1rem] border border-[#5328f3]/50 p-1 rounded-lg bg-gray-900">
+                                                  
+                                                  <img
+                                                       src={dartImage.src}
+                                                       className="rounded-lg"
+                                                       width={300}
+                                                       alt="Dart Metrics"
+                                                  />
+                                                  
                                              </div>
                                         </ScrollParallax>
                                         <ScrollParallax isAbsolutelyPositioned>
-                                             <div className="absolute hidden md:block -right-[10rem] top-[1rem] border border-white/80 p-1 rounded-lg bg-gray-900">
+                                             <div className="absolute hidden md:block -right-[10rem] top-[1rem] rounded-lg bg-transparent">
                                                   <img
                                                        src={tractionImage.src}
-                                                       className="border border-white/80 rounded-lg"
+                                                       className="border border-[#5328f3]/50 rounded-lg"
                                                        width={300}
                                                        alt="Traction Metrics"
                                                   />

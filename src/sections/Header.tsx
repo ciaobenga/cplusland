@@ -36,11 +36,11 @@ export const Header = () => {
                          <Link href="/features" className="text-sm font-medium text-gray-300 hover:text-white">
                               Features
                          </Link>
+                         <Link href="/about" className="text-sm font-medium text-gray-300 hover:text-white">
+                              Resources
+                         </Link>
                          <Link href="/pricing" className="text-sm font-medium text-gray-300 hover:text-white">
                               Pricing
-                         </Link>
-                         <Link href="/about" className="text-sm font-medium text-gray-300 hover:text-white">
-                              Company
                          </Link>
                     </nav>
                     <Link href='https://calendly.com/circleplus-io/demo' target='_blank'>
@@ -58,11 +58,11 @@ export const Header = () => {
                                         <Link href="/features" className="text-sm font-medium text-gray-300 hover:text-white">
                                              Features
                                         </Link>
+                                        <Link href="/about" className="text-sm font-medium text-gray-300 hover:text-white">
+                                             Resources
+                                        </Link>
                                         <Link href="/pricing" className="text-sm font-medium text-gray-300 hover:text-white">
                                              Pricing
-                                        </Link>
-                                        <Link href="/about" className="text-sm font-medium text-gray-300 hover:text-white">
-                                             Company
                                         </Link>
                                         <Link href="https://calendly.com/circleplus-io/demo" target='_blank'>
                                              <Button className="w-full bg-[#5328f3] text-white hover:bg-[#6942f6]">Book Demo</Button>

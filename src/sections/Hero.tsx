@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
-import Techstars from '@/assets/techstars.png';
+
 import { CoFounder } from '@/components/CoFounder';
 
 export const Hero = () => {
@@ -22,8 +22,8 @@ export const Hero = () => {
   }, [])
 
   return (
-     <section className="flex items-center relative -mt-[8rem] py-20">
-          <div className="container h-screen">
+     <section className="flex items-center relative -mt-[7rem] pt-32 pb-10 sm:pb-0">
+          <div className="container h-full">
                <div
                     className="absolute inset-0 pointer-events-none"
                     style={{
@@ -70,17 +70,6 @@ export const Hero = () => {
                          </motion.button>
                     </a>
                </div>
-               <motion.div className="flex items-center justify-center mb-32"
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.6 }}>
-                    <img
-                         src={Techstars.src}
-                         width={400}
-                         alt="Techstars '24"
-                         className=''
-                    />
-               </motion.div>
           </div>
           <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black to-transparent"></div>
      </section>
