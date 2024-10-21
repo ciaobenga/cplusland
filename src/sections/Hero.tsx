@@ -38,7 +38,7 @@ export const Hero = () => {
                     <div className="flex justify-center items-center py-4">
                          <p className="text-center font-medium md:text-sm text-xs px-6 py-1 text-gray-400 rounded-full bg-white/10 border border-white/25">
                               We've Officially Launched
-                              <a href="#" className="text-white font-semibold px-2">
+                              <a href="https://circleplus.mn.co/" target="_blank" className="text-white font-semibold px-2">
                                    Join Waitlist &gt;
                               </a>
                          </p>
