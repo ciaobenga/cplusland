@@ -75,9 +75,12 @@ export const PricingSection = () =>  {
           <p className="text-sm uppercase tracking-wider mb-2 font-medium text-[#6e48fb]">
             Pricing
           </p>
-          <h1 className="text-3xl md:text-5xl font-semibold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-gray-400 to-gray-300 leading-10">
-            Circle+ Co.Founder
+          <h1 className="text-3xl md:text-5xl font-semibold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-gray-400 to-gray-300 leading-10">
+            Pinch Yourself
           </h1>
+          <h5 className='text-base text-white'>
+            Our founder-friendly pricing packages allow founders to hire a Co.Founder that suits their venture's stage.
+          </h5>
         </motion.header>
         <div className="flex justify-center mb-8">
           <div className="flex items-center bg-black rounded-lg p-1 border border-white/15">

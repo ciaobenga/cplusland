@@ -30,7 +30,7 @@ const tabs = [
        backgroundPositionX: 0,
        backgroundPositionY: 0,
        backgroundSizeX: 150,
-       image: dartImage.src,
+       image: '/dart_chart.png',
      },
      {
        icon: "/assets/lottie/vroom.lottie",
@@ -39,7 +39,7 @@ const tabs = [
        backgroundPositionX: 98,
        backgroundPositionY: 100,
        backgroundSizeX: 135,
-       image: tractionImage.src,
+       image: '/traction_image.png',
      },
      {
        icon: "/assets/lottie/stars.lottie",
@@ -48,7 +48,7 @@ const tabs = [
        backgroundPositionX: 100,
        backgroundPositionY: 27,
        backgroundSizeX: 177,
-       image: productImage.src,
+       image: '/product_image.png',
      },
 ];
 
@@ -134,7 +134,7 @@ export const Features = () => {
                                    animate={{ opacity: 1, y: 0 }}
                                    transition={{ duration: 0.8, delay: 0.6 }}>
                                    <img
-                                        src={Techstars.src}
+                                        src='techstars.png'
                                         width={400}
                                         alt="Techstars '24"
                                         className=''
@@ -142,10 +142,10 @@ export const Features = () => {
                               </motion.div>
                               <motion.header className="mb-16 text-center" variants={fadeInUp}>
                                    <p className="text-sm uppercase tracking-wider mb-2 font-medium text-[#6e48fb]">
-                                        Master your Metrics
+                                        IT ALL STARTS WITH A METRIC
                                    </p>
-                                   <h1 className="text-3xl md:text-5xl font-semibold mb-8  bg-clip-text text-transparent bg-gradient-to-r from-gray-400 to-gray-300 leading-10">
-                                        Streamlining all your venture performance metrics.
+                                   <h1 className="text-2xl md:text-3xl font-semibold mb-8  bg-clip-text text-transparent bg-gradient-to-r from-gray-400 to-gray-300 leading-10">
+                                        Anticipate which metrics you should <span className="italic">track, visualize & report</span>.
                                    </h1>
                               </motion.header>
                               <div className="mt-10 flex flex-col gap-3 lg:flex-row">
@@ -159,7 +159,7 @@ export const Features = () => {
                                    <div
                                         className="aspect-video bg-cover border border-[#5328f3]/50 rounded-lg hidden md:block"
                                         style={{
-                                             backgroundImage:`url(${productImage.src})`,
+                                             backgroundImage:`url(/product_image.png)`,
                                         }}
                                    >
                                         <ScrollParallax isAbsolutelyPositioned>

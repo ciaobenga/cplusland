@@ -1,3 +1,4 @@
+import { Footer } from "@/sections/Footer";
 import { Header } from "@/sections/Header";
 import { ResourcesPage } from "@/sections/ResourcePage";
 
@@ -13,6 +14,7 @@ export default function Privacy() {
                <div className="bg-black">
                     <Header />
                     <ResourcesPage />
+                    <Footer />
                </div>
           </>
      );

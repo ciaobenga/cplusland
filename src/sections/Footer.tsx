@@ -74,19 +74,17 @@ export const Footer = () => {
             className="col-span-1 md:col-span-2"
           >
             <h3 className="text-3xl font-bold mb-4 text-white">Circle+</h3>
-            <p className="text-gray-400 mb-6">Simplifying startup metrics with AI-powered solutions.</p>
+            <p className="text-gray-400 mb-6">AI agents for startup metrics.</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <h4 className="text-lg font-semibold mb-4 text-white">Product</h4>
+            <h4 className="text-lg font-semibold mb-4 text-white">Company</h4>
             <ul className="space-y-2 text-sm">
-              <li><FooterLink href="/features">Features</FooterLink></li>
-              <li><FooterLink href="/pricing">Pricing</FooterLink></li>
-              <li><FooterLink href="/integrations">Integrations</FooterLink></li>
-              <li><FooterLink href="/case-studies">Case Studies</FooterLink></li>
+              <li><FooterLink href="https://disrupting.africa">Legacy Data</FooterLink></li>
+              <li><FooterLink href="https://wellfound.com/company/circleplus/jobs">Careers</FooterLink></li>
             </ul>
           </motion.div>
           <motion.div
@@ -94,10 +92,12 @@ export const Footer = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h4 className="text-lg font-semibold mb-4 text-white">Company</h4>
+            <h4 className="text-lg font-semibold mb-4 text-white">Resources</h4>
             <ul className="space-y-2 text-sm">
-              <li><FooterLink href="/resources">Resources</FooterLink></li>
-              <li><FooterLink href="#">Careers</FooterLink></li>
+              <li><FooterLink href="#">Investor Relations</FooterLink></li>
+              <li><FooterLink href="/resources">Articles</FooterLink></li>
+              <li><FooterLink href="#">Events</FooterLink></li>
+              <li><FooterLink href="#">Press</FooterLink></li>
             </ul>
           </motion.div>
         </div>
@@ -107,7 +107,7 @@ export const Footer = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <p className="text-gray-400 text-sm mb-4 sm:mb-0">&copy; {new Date().getFullYear()} Circle+. All rights reserved.</p>
+          <p className="text-gray-400 text-sm mb-4 sm:mb-0">&copy; {new Date().getFullYear()} Circle+. All Rights Reserved.</p>
           <div className="flex space-x-4">
             <SocialIcon
               href="https://wellfound.com/company/circleplus"

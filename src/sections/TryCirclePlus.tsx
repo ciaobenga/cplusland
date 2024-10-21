@@ -52,10 +52,10 @@ export const TryCirclePlusSection = () => {
               <div className="h-full w-full bg-[url('/dot-matrix.svg')] opacity-5 bg-cover bg-center bg-no-repeat" />
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-300 to-gray-300">
-              Ready to build?
+              Ready to Sign Up?
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Start building your realtime application with a free account.
+              Join our 7-day waitlist for Co.Founder today
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
               <a href="/" className='z-20'>
@@ -64,7 +64,7 @@ export const TryCirclePlusSection = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  Try Co.Founder
+                  Preview Co.Founder
                 </motion.button>
               </a>
               <a href="/" className="text-[#5328f3] hover:text-[#6942f6] font-medium transition-colors duration-300 z-20">

@@ -113,7 +113,7 @@ export const FeaturesSection = () => {
             Features
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 md:mb-8 bg-clip-text text-transparent bg-gradient-to-r from-gray-400 to-gray-300 leading-tight">
-            Empower Your Startup
+            Startup Metrics Made Human
           </h2>
         </motion.header>
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">

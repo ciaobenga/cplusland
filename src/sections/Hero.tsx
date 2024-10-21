@@ -39,7 +39,7 @@ export const Hero = () => {
                          <p className="text-center font-medium md:text-sm text-xs px-6 py-1 text-gray-400 rounded-full bg-white/10 border border-white/25">
                               We've Officially Launched
                               <a href="#" className="text-white font-semibold px-2">
-                                   Learn More &gt;
+                                   Join Waitlist &gt;
                               </a>
                          </p>
                     </div>
@@ -49,7 +49,7 @@ export const Hero = () => {
                          animate={{ opacity: 1, y: 0 }}
                          transition={{ duration: 0.8 }}
                     >
-                         <span className='text-[#5328f3]'>Co.Founders</span> Streamline Metrics for Growth
+                         <span className='text-[#5328f3]'>Co.Founders</span> Streamline Metrics for Startups
                     </motion.h3>
                     <motion.p
                          className="text-sm md:text-base mb-8 max-w-2xl text-white/80"
@@ -66,7 +66,7 @@ export const Hero = () => {
                               animate={{ opacity: 1, y: 0 }}
                               transition={{ duration: 0.8, delay: 0.4 }}
                          >
-                              Try Co.Founder
+                              Preview Co.Founder
                          </motion.button>
                     </a>
                </div>
