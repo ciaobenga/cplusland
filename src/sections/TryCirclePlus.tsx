@@ -67,9 +67,6 @@ export const TryCirclePlusSection = () => {
                   Preview Co.Founder
                 </motion.button>
               </a>
-              <a href="/" className="text-[#5328f3] hover:text-[#6942f6] font-medium transition-colors duration-300 z-20">
-                Learn more about Co.Founder
-              </a>
             </div>
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
               <FeatureItem icon={<CreditCard size={20} />} text="Credit Card Required" />

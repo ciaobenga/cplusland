@@ -65,7 +65,7 @@ export const Footer = () => {
 
   return (
     <footer className="text-white container">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -102,7 +102,7 @@ export const Footer = () => {
           </motion.div>
         </div>
         <motion.div
-          className="mt-12 pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center"
+          className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center space-y-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
@@ -133,15 +133,15 @@ export const Footer = () => {
         </motion.div>
       </div>
       <div className="bg-black py-4">
-        <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex gap-8 items-center justify-between">
-          <div className="w-full space-x-4 mb-4 sm:mb-0 grid grid-cols-1 md:grid-cols-4">
+        <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex  md:flex-row flex-col gap-2 md:items-center justify-between">
+          <div className="w-full md:space-x-4 space-y-2 mb-4 text-sm grid grid-cols-1 md:grid-cols-4">
             <FooterLink href="/privacy">Privacy Policy</FooterLink>
             <FooterLink href="/terms">Terms of Service</FooterLink>
             <FooterLink href="/security">Security</FooterLink>
           </div>
           <div className="flex items-center text-gray-400">
             <Mail size={16} className="mr-2" />
-            <a href="mailto:main@circleplus.xyz" className="hover:text-white transition-colors duration-300">main@circleplus.xyz</a>
+            <a href="mailto:main@circleplus.xyz" className="hover:text-white text-sm transition-colors duration-300">main@circleplus.xyz</a>
           </div>
         </div>
       </div>

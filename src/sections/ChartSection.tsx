@@ -117,7 +117,7 @@ export const ChartSection = () => {
                               </motion.div>
 
                               <motion.div className="w-full relative md:col-span-1 backdrop-blur-sm bg-opacity-80" variants={itemVariants}>
-                                   <div className="relative bg-black overflow-hidden h-full border border-[#5328f3]/50 rounded-lg">
+                                   <div className="relative bg-black overflow-hidden flex flex-col justify-between h-full border border-[#5328f3]/50 rounded-lg">
                                         <div className="p-4 sm:p-6">
                                              <div
                                                   className="absolute inset-0 pointer-events-none"
@@ -151,7 +151,7 @@ export const ChartSection = () => {
                                                   transition={{ delay: 0.4 }}
                                              >
                                                   <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Mapping Value</h2>
-                                                  <p className="text-gray-400 text-sm sm:text-base">Circle+ has a variety of core features that help you think through business wisdom about venture performance management.</p>
+                                                  <p className="text-gray-400 text-sm sm:text-base">Think through business wisdom about venture performance management.</p>
                                              </motion.div>
                                         </div>
                                    </div>

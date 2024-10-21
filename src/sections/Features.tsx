@@ -145,7 +145,7 @@ export const Features = () => {
                                         IT ALL STARTS WITH A METRIC
                                    </p>
                                    <h1 className="text-2xl md:text-3xl font-semibold mb-8  bg-clip-text text-transparent bg-gradient-to-r from-gray-400 to-gray-300 leading-10">
-                                        Anticipate which metrics you should <span className="italic">track, visualize & report</span>.
+                                        Anticipate which metrics you should track, visualize & report.
                                    </h1>
                               </motion.header>
                               <div className="mt-10 flex flex-col gap-3 lg:flex-row">
