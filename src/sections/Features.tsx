@@ -105,7 +105,7 @@ const FeatureTab = (tab: (typeof tabs)[number]) => {
                          <div className="text-xs rounded-md px-2 py-0.5 bg-[#5328f3] text-white font-semibold">new</div>
                     )}
                </div>
-               <div className="sm:hidden border border-[#5328f3]/25 py-2.5 rounded-lg bg-black flex items-center justify-center">
+               <div className="md:hidden border border-[#5328f3]/25 py-2.5 rounded-lg bg-black flex items-center justify-center">
                     <img
                          src={tab.image}
                          className="rounded-lg border border-[#5328f3]/25"
@@ -142,7 +142,7 @@ export const Features = () => {
                               </motion.div>
                               <motion.header className="mb-16 text-center" variants={fadeInUp}>
                                    <p className="text-sm uppercase tracking-wider mb-2 font-medium text-[#6e48fb]">
-                                        IT ALL STARTS WITH A METRIC
+                                        It All Starts With A Metric
                                    </p>
                                    <h1 className="text-2xl md:text-3xl font-semibold mb-8  bg-clip-text text-transparent bg-gradient-to-r from-gray-400 to-gray-300 leading-10">
                                         Anticipate which metrics you should track, visualize & report.
@@ -163,21 +163,21 @@ export const Features = () => {
                                         }}
                                    >
                                         <ScrollParallax isAbsolutelyPositioned>
-                                             <div className="absolute hidden md:block -left-[10rem] bottom-[1rem] border border-[#5328f3]/50 p-1 rounded-lg bg-gray-900">
+                                             <div className="absolute hidden md:block -left-[5rem] bottom-[2rem] border border-[#5328f3]/50 p-1 rounded-lg bg-black">
                                                   <img
-                                                       src={dartGif.src}
+                                                       src={dartImage.src}
                                                        className="rounded-lg"
-                                                       width={300}
+                                                       width={350}
                                                        alt="Dart Metrics"
                                                   />
                                              </div>
                                         </ScrollParallax>
                                         <ScrollParallax isAbsolutelyPositioned>
-                                             <div className="absolute hidden md:block -right-[10rem] top-[1rem] rounded-lg bg-transparent">
+                                             <div className="absolute hidden md:block -right-[5rem] top-[2rem] rounded-lg bg-transparent">
                                                   <img
-                                                       src={tractionGif.src}
+                                                       src={tractionImage.src}
                                                        className="border border-[#5328f3]/50 rounded-lg"
-                                                       width={300}
+                                                       width={350}
                                                        alt="Traction Metrics"
                                                   />
                                              </div>

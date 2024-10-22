@@ -38,7 +38,7 @@ export const CTASection = () => {
             <p className="text-gray-300 text-center mb-8">
               Stay up-to-date with Circle+ with our periodic updates & events.
             </p>
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
               <input
                 type="email"
                 placeholder="Enter your email"

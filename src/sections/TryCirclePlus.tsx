@@ -45,7 +45,7 @@ export const TryCirclePlusSection = () => {
             <div
               className="absolute inset-0 pointer-events-none"
               style={{
-              background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(83, 40, 243, 0.25), transparent 100%)`,
+                background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(83, 40, 243, 0.25), transparent 100%)`,
               }}
             />
             <div className="absolute inset-0">
