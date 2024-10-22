@@ -5,6 +5,7 @@ import { FeaturesSection } from "@/sections/FeaturesSection";
 import { Footer } from "@/sections/Footer";
 import { Header } from "@/sections/Header";
 import { Hero } from "@/sections/Hero";
+import { LogoTicker } from "@/sections/LogoTicker";
 import  { PricingSection }  from "@/sections/Pricing";
 import { TryCirclePlusSection } from "@/sections/TryCirclePlus";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <div className="bg-black">
         <Header />
         <Hero />
+        <LogoTicker />
         <Features />
         <FeaturesSection />
         <ChartSection />
