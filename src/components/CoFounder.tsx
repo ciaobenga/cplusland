@@ -4,6 +4,8 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent } from "@/components/ui/dialog"
+
+import { useSpeechInteraction } from "@/lib/useSpeechInteraction";
 import { Mic, MicOff, PhoneOff, X } from 'lucide-react'
 import Image from 'next/image'
 
@@ -30,10 +32,38 @@ const GlassGlow = ({ children }: { children: React.ReactNode }) => (
 )
 
 export const CoFounder = () => {
+     const {
+          userInput,
+          setUserInput,
+          chatResponse,
+          loading,
+          isRecording,
+          isTalking,
+          interimTranscript,
+          hasStarted,
+          currentQuestion,
+          // startConversation,
+          startRecording,
+          stopRecording,
+          playAudio,
+          stopAudio,
+          handleUserInput,
+        } = useSpeechInteraction();
      const [isOpen, setIsOpen] = useState(false)
      const [isMuted, setIsMuted] = useState(false)
      const [isHovered, setIsHovered] = useState(false)
      const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+
+     const [voiceChat, setVoiceChat] = useState(false);
+     const toggleCall = () => {
+          startRecording();
+          setVoiceChat(true);
+        };
+        const toggleEndCall = () => {
+          stopAudio();
+          stopRecording();
+          setVoiceChat(false);
+        };
 
      const toggleMute = () => setIsMuted(!isMuted)
      const endCall = () => setIsOpen(false)
@@ -88,7 +118,7 @@ export const CoFounder = () => {
                     </AnimatePresence>
                </motion.div>
 
-               <AnimatePresence>
+               <AnimatePresence> 
                     {isOpen && (
                          <Dialog open={isOpen} onOpenChange={setIsOpen}>
                               <DialogContent className="sm:max-w-[80vw] md:max-w-[50vw] lg:max-w-[70vw] h-[70vh] mx-auto bg-white bg-opacity-10 backdrop-filter backdrop-blur border-none">
@@ -124,15 +154,15 @@ export const CoFounder = () => {
                                                        variant="outline"
                                                        size="icon"
                                                        className={`rounded-full w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 backdrop-filter backdrop-blur-md border border-white border-opacity-30 ${isMuted ? 'text-red-500' : 'text-white'}`}
-                                                       onClick={toggleMute}
+                                                       onClick={toggleCall}
                                                   >
-                                                       {isMuted ? <MicOff className="h-5 w-5 sm:h-6 sm:w-6" /> : <Mic className="h-5 w-5 sm:h-6 sm:w-6" />}
+                                                       {voiceChat ? <MicOff className="h-5 w-5 sm:h-6 sm:w-6" /> : <Mic className="h-5 w-5 sm:h-6 sm:w-6" />}
                                                   </Button>
                                                   <Button
                                                        variant="destructive"
                                                        size="icon"
                                                        className="rounded-full w-10 h-10 sm:w-12 sm:h-12 bg-red-500 bg-opacity-70 hover:bg-opacity-100 text-white backdrop-filter backdrop-blur-md"
-                                                       onClick={endCall}
+                                                       onClick={toggleEndCall}
                                                   >
                                                        <PhoneOff className="h-5 w-5 sm:h-6 sm:w-6" />
                                                   </Button>
