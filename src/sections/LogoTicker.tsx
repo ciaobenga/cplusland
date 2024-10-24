@@ -23,7 +23,7 @@ export const LogoTicker = () => {
   const extendedLogoData = [...logoData, ...logoData]
 
   return (
-    <section className="relative flex items-center pt-32 pb-16">
+    <section className="relative flex items-center py-14">
       <div className="container">
         <div className="flex items-center gap-6">
           <div className="flex-1 md:flex-none">

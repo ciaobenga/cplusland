@@ -129,17 +129,6 @@ export const Features = () => {
                               animate="animate"
                               variants={staggerChildren}
                          >
-                              <motion.div className="flex items-center justify-center mb-16"
-                                   initial={{ opacity: 0, y: -20 }}
-                                   animate={{ opacity: 1, y: 0 }}
-                                   transition={{ duration: 0.8, delay: 0.6 }}>
-                                   <img
-                                        src='techstars.png'
-                                        width={400}
-                                        alt="Techstars '24"
-                                        className=''
-                                   />
-                              </motion.div>
                               <motion.header className="mb-16 text-center" variants={fadeInUp}>
                                    <p className="text-sm uppercase tracking-wider mb-2 font-medium text-[#6e48fb]">
                                         It All Starts With A Metric

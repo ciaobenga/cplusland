@@ -22,7 +22,7 @@ export const Hero = () => {
   }, [])
 
   return (
-     <section className="flex items-center relative -mt-[7rem] pt-40 pb-10 sm:pb-0">
+     <section className="flex items-center relative -mt-[7rem] pt-40 md:pb-16 pb-0">
           <div className="container h-full">
                <div
                     className="absolute inset-0 pointer-events-none"
