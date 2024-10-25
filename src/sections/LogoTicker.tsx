@@ -13,6 +13,7 @@ const logoData: LogoData[] = [
   { src: '/logos/logo_eleven_labs.png', alt: 'Eleven Labs', link: 'https://elevenlabs.io/text-to-speech', width:120 },
   { src: '/logos/logo_digital_ocean.png', alt: 'Digital Ocean', link: 'https://www.digitalocean.com', width: 55 },
   { src: '/logos/logo_aws_startups.png', alt: 'AWS', link: 'https://aws.amazon.com/startups', width: 120 },
+  { src: '/logos/logo_intercom.png', alt: 'Intercom', link: 'https://intercom.com', width: 120 },
   { src: '/logos/logo_microsoft.png', alt: 'Microsoft Startups', link: 'https://www.microsoft.com/en-us/startups', width: 120 },
   { src: '/logos/logo_notion.png', alt: 'Notion', link: 'https://www.notion.so', width: 100 },
   { src: '/logos/logo_asana.png', alt: 'Asana', link: 'https://asana.com', width: 55 },
