@@ -1,13 +1,9 @@
 "use client"
 
 import { useEffect, useRef } from "react";
-import Techstars from '@/assets/techstars.png';
 import { animate, motion, useMotionTemplate, useMotionValue, ValueAnimationTransition } from "framer-motion";
 import { ScrollParallax } from "react-just-parallax";
 import { DotLottieCommonPlayer, DotLottiePlayer } from "@dotlottie/react-player";
-import productImage from '@/assets/product_image.png';
-import dartGif from '@/assets/dart_metrics.gif';
-import tractionGif from '@/assets/traction_metrics.gif';
 import tractionImage from '@/assets/traction_image.png';
 import dartImage from '@/assets/dart_chart.png';
 
