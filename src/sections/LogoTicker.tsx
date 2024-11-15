@@ -17,7 +17,6 @@ const logoData: LogoData[] = [
   { src: '/logos/logo_microsoft.png', alt: 'Microsoft Startups', link: 'https://www.microsoft.com/en-us/startups', width: 120 },
   { src: '/logos/logo_notion.png', alt: 'Notion', link: 'https://www.notion.so', width: 100 },
   { src: '/logos/logo_asana.png', alt: 'Asana', link: 'https://asana.com', width: 55 },
-  { src: '/logos/logo_openai.png', alt: 'Open AI', link: 'https://openai.com', width: 120 },
 ]
 
 export const LogoTicker = () => {
