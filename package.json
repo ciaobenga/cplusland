@@ -20,6 +20,8 @@
     "elevenlabs": "^0.17.1",
     "firebase": "^10.14.1",
     "framer-motion": "^11.11.8",
+    "livekit-client": "^2.5.10",
+    "livekit-server-sdk": "^2.7.2",
     "lucide-react": "^0.452.0",
     "next": "14.2.15",
     "next-auth": "^4.24.8",

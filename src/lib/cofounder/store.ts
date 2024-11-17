@@ -18,7 +18,7 @@ interface State {
 export const useStore = create<State>((set) => ({
   userInput: '', 
   transcript: '',
-  selectedVoice: '9BWtsMINqrJLrRacOk9x',
+  selectedVoice: 'EXAVITQu4vr4xnSDxMaL',
   audioRef: null,
   conversation: [],
   setAudioRef: (audio) => set({ audioRef: audio }),
