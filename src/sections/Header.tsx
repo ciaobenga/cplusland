@@ -25,7 +25,7 @@ export const Header = () => {
                     <div className='h-10 w-10 rounded-lg inline-flex justify-center items-center '>
                          <a href="/">
                          <img
-                              src={LogoIcon.src}
+                              src="/circleplus.png"
                               width={30}
                               height={30}
                               alt="Logo"

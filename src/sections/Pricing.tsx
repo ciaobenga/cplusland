@@ -46,9 +46,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, monthlyPrice, yearlyPr
         ))}
       </ul>
       <a
-        href={
-          isElite ? 'https://buy.stripe.com/dR6g302E81qQefS8wx' : 'https://buy.stripe.com/28o6sqa6A0mM8Vy4gg'
-        }
+        href='https://app.circleplus.io'
         target='_blank'
       >
         <motion.button

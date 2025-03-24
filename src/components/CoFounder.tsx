@@ -87,9 +87,9 @@ export const CoFounder = () => {
         whileTap={{ scale: 0.95 }}
       >
         <GlassGlow>
-          <motion.div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-white border-none bg-opacity-50 backdrop-filter backdrop-blur-sm rounded-full shadow-lg flex items-center justify-center overflow-hidden">
+          <motion.div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28  border-none bg-opacity-50 backdrop-filter backdrop-blur-sm rounded-full shadow-lg flex items-center justify-center overflow-hidden">
             <img
-              src="/co_founder_icon.png"
+              src="/circleplus.png"
               alt="Co.Founder"
               width={100}
               height={100}
@@ -111,7 +111,7 @@ export const CoFounder = () => {
               transition={{ duration: 0.4 }}
             >
               <Mic className="w-4 h-4" />
-              <span className="font-semibold">Click to Talk</span>
+              <span className="font-semibold">Click to Preview</span>
             </motion.div>
           )}
         </AnimatePresence>
@@ -138,7 +138,7 @@ export const CoFounder = () => {
                           transition={{ duration: 0.5 }}
                         >
                           <img
-                            src="/co_founder_icon.png"
+                            src="/circleplus.png"
                             alt="Co.Founder"
                             width={200}
                             height={200}

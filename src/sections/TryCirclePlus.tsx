@@ -55,7 +55,7 @@ export const TryCirclePlusSection = () => {
               Ready to Sign Up?
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Join our 7-day waitlist for Co.Founder today
+              Join our Circle+ Universe today
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
               <a href="/" className='z-20'>

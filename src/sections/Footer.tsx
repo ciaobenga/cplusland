@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { Twitter, Linkedin, Github, ArrowRight, Mail } from 'lucide-react'
+import { SiCrunchbase, SiDiscord, SiLinkedin, SiX } from 'react-icons/si'
 
 interface SocialIconProps {
   href: string
@@ -85,6 +86,7 @@ export const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li><FooterLink href="https://disrupting.africa">Legacy Data</FooterLink></li>
               <li><FooterLink href="https://wellfound.com/company/circleplus/jobs">Careers</FooterLink></li>
+              <li><FooterLink href="/support">Circle+ Support Hub</FooterLink></li>
             </ul>
           </motion.div>
           <motion.div
@@ -116,18 +118,23 @@ export const Footer = () => {
             />
             <SocialIcon
               href="https://www.crunchbase.com/organization/circle-c03b"
-              icon={<CrunchbaseIcon />}
+              icon={<SiCrunchbase />}
               label="Crunchbase"
             />
             <SocialIcon
               href="https://x.com/circleplusxyz"
-              icon={<Twitter size={20} />}
+              icon={<SiX size={20} />}
               label="Twitter"
             />
             <SocialIcon
               href="https://www.linkedin.com/company/circle-plus/posts/?feedView=all"
-              icon={<Linkedin size={20} />}
+              icon={<SiLinkedin size={20} />}
               label="LinkedIn"
+            />
+            <SocialIcon
+              href="https://discord.gg/BTp4d8qmx2"
+              icon={<SiDiscord size={20} />}
+              label="Discord"
             />
           </div>
         </motion.div>
