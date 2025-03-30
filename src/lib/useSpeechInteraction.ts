@@ -147,6 +147,7 @@ export const useSpeechInteraction = () => {
         URL.revokeObjectURL(url); // Clean up the URL
       };
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [audioBlob]); // Only run this effect when audioBlob changes
   // useEffect(() => {
   //   // Clean up the URL when the component unmounts or audioUrl changes
@@ -313,6 +314,7 @@ export const useSpeechInteraction = () => {
     if (!isRecording && userInput.trim()) {
       handleUserInput();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [userInput, isRecording]);
 
   return {
