@@ -52,32 +52,32 @@ export const ChartSection = () => {
                     >
                          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
                               <motion.div
-                                   className="w-full bg-black p-4 sm:p-6 md:col-span-2 backdrop-blur-sm bg-opacity-80 border border-[#5328f3]/50 rounded-lg md:block hidden"
+                                   className="w-full bg-black p-4 sm:p-6 md:col-span-2 backdrop-blur-sm bg-opacity-80 border border-[#3FADFF]/50 rounded-lg md:block hidden"
                                    variants={itemVariants}
                               >
                                    <div
                                         className="absolute inset-0 pointer-events-none"
                                         style={{
-                                        background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(83, 40, 243, 0.20), transparent 80%)`,
+                                             background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(4, 249, 255, 0.10), rgba(63, 173, 255, 0.15), rgba(190, 8, 255, 0.10), transparent 80%)`,
                                         }}
                                    />
                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 ">
                                         <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden ">
                                              <img
-                                                  src="/desk.jpg"
+                                                  src="/desk.png"
                                                   width={400}
                                                   height={300}
                                                   alt="Circle+ Desk"
-                                                  className="rounded-lg bg-black border border-white/50"
+                                                  className="rounded-lg bg-black border border-[#3FADFF]/50"
                                              />
                                         </div>
                                         <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
                                              <img
-                                                  src="/chart_dart.jpg"
+                                                  src="/plug-and-play.png"
                                                   width={400}
                                                   height={300}
                                                   alt="Traction Metrics"
-                                                  className="rounded-lg bg-black border border-white/50"
+                                                  className="rounded-lg bg-black border border-[#3FADFF]/50"
                                              />
                                         </div>
                                    </div>
@@ -85,21 +85,21 @@ export const ChartSection = () => {
                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                                         <a href="https://app.loopedin.io" target="_blank">
                                              <motion.div
-                                                  className="flex items-center space-x-2 bg-transparent rounded-md p-3 sm:p-4 transition-colors z-20 border border-white/50"
+                                                  className="flex items-center space-x-2 bg-transparent rounded-md p-3 sm:p-4 transition-colors z-20 border border-[#3FADFF]/50"
                                                   whileHover={{ scale: 1.05 }}
                                                   whileTap={{ scale: 0.95 }}
                                              >
-                                                  <Sparkles className="text-white w-5 h-5 sm:w-6 sm:h-6" />
+                                                  <Sparkles className="text-[#04F9FF] w-5 h-5 sm:w-6 sm:h-6" />
                                                   <span className="text-white font-medium text-sm sm:text-base">Product Roadmap</span>
                                              </motion.div>
                                         </a>
                                         <a href="https://docsend.com/view/t35kum3xqsyg5w5h" target="_blank">
                                              <motion.div
-                                                  className="flex items-center space-x-2 bg-transparent rounded-md p-3 sm:p-4 transition-colors z-20 border border-white/50"
+                                                  className="flex items-center space-x-2 bg-transparent rounded-md p-3 sm:p-4 transition-colors z-20 border border-[#3FADFF]/50"
                                                   whileHover={{ scale: 1.05 }}
                                                   whileTap={{ scale: 0.95 }}
                                              >
-                                                  <BarChart2 className="text-white w-5 h-5 sm:w-6 sm:h-6" />
+                                                  <BarChart2 className="text-[#04F9FF] w-5 h-5 sm:w-6 sm:h-6" />
                                                   <span className="text-white font-medium text-sm sm:text-base">Pulse Snapshot </span>
                                              </motion.div>
                                         </a>
@@ -117,15 +117,15 @@ export const ChartSection = () => {
                               </motion.div>
 
                               <motion.div className="w-full relative md:col-span-1 backdrop-blur-sm bg-opacity-80" variants={itemVariants}>
-                                   <div className="relative bg-black overflow-hidden flex flex-col justify-between h-full border border-[#5328f3]/50 rounded-lg">
+                                   <div className="relative bg-black overflow-hidden flex flex-col justify-between h-full border border-[#3FADFF]/50 rounded-lg">
                                         <div className="p-4 sm:p-6">
-                                             <div
-                                                  className="absolute inset-0 pointer-events-none"
-                                                  style={{
-                                                  background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(83, 40, 243, 0.20), transparent 80%)`,
-                                                  }}
-                                             />
-                                             <div className="z-40 aspect-w-1 aspect-h-1 w-full rounded-lg overflow-hidden bg-black border border-white/50">
+                                        <div
+                                             className="absolute inset-0 pointer-events-none"
+                                             style={{
+                                                  background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(4, 249, 255, 0.10), rgba(63, 173, 255, 0.15), rgba(190, 8, 255, 0.10), transparent 80%)`,
+                                             }}
+                                        />
+                                             <div className="z-40 aspect-w-1 aspect-h-1 w-full rounded-lg overflow-hidden bg-black border border-[#3FADFF]/50">
                                                   <img
                                                        src="/co_founder.jpg"
                                                        width={400}
@@ -158,17 +158,17 @@ export const ChartSection = () => {
                               </motion.div>
 
                               <motion.div className="w-full relative md:col-span-1 backdrop-blur-sm bg-opacity-80 md:hidden" variants={itemVariants}>
-                                   <div className="relative bg-black overflow-hidden h-full border border-[#5328f3]/50 rounded-lg">
+                                   <div className="relative bg-black overflow-hidden h-full border border-[#3FADFF]/50 rounded-lg">
                                         <div className="p-4 sm:p-6">
-                                             <div
-                                                  className="absolute inset-0 pointer-events-none"
-                                                  style={{
-                                                  background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(83, 40, 243, 0.20), transparent 80%)`,
-                                                  }}
-                                             />
-                                             <div className="z-40 aspect-w-1 aspect-h-1 w-full rounded-lg overflow-hidden bg-black border border-white/50">
+                                        <div
+                                             className="absolute inset-0 pointer-events-none"
+                                             style={{
+                                                  background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(4, 249, 255, 0.10), rgba(63, 173, 255, 0.15), rgba(190, 8, 255, 0.10), transparent 80%)`,
+                                             }}
+                                        />
+                                             <div className="z-40 aspect-w-1 aspect-h-1 w-full rounded-lg overflow-hidden bg-black border border-[#3FADFF]/50">
                                                   <img
-                                                       src="/desk.jpg"
+                                                       src="/desk.png"
                                                        width={400}
                                                        height={300}
                                                        alt="Goalseek"
@@ -199,7 +199,7 @@ export const ChartSection = () => {
                               </motion.div>
 
                               <motion.div className="w-full relative md:col-span-1 backdrop-blur-sm bg-opacity-80 md:hidden" variants={itemVariants}>
-                                   <div className="relative bg-black overflow-hidden h-full border border-[#5328f3]/50 rounded-lg">
+                                   <div className="relative bg-black overflow-hidden h-full border border-[#3FADFF]/50 rounded-lg">
                                         <div className="p-4 sm:p-4">
                                              <div
                                                   className="absolute inset-0 pointer-events-none"
@@ -209,7 +209,7 @@ export const ChartSection = () => {
                                              />
                                              <div className="z-40 aspect-w-1 aspect-h-1 w-full rounded-lg overflow-hidden bg-black border border-white/50">
                                                   <img
-                                                       src="/chart_dart.jpg"
+                                                       src="/plug-and-play.png"
                                                        width={400}
                                                        height={300}
                                                        alt="Goalseek"

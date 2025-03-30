@@ -5,7 +5,7 @@ import { animate, motion, useMotionTemplate, useMotionValue, ValueAnimationTrans
 import { ScrollParallax } from "react-just-parallax";
 import { DotLottieCommonPlayer, DotLottiePlayer } from "@dotlottie/react-player";
 import tractionImage from '@/assets/traction_image.png';
-import dartImage from '@/assets/dart_chart.png';
+import dartImage from '@/assets/plug-and-play.png';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -26,7 +26,7 @@ const tabs = [
        backgroundPositionX: 0,
        backgroundPositionY: 0,
        backgroundSizeX: 150,
-       image: '/dart_chart.png',
+       image: '/plug-and-play.png',
      },
      {
        icon: "/assets/lottie/vroom.lottie",
@@ -86,9 +86,19 @@ const FeatureTab = (tab: (typeof tabs)[number]) => {
      }
      return (
           <div onMouseEnter={handleTabHover} className=" w-full rounded-lg  gap-2.5 flex flex-col">
-               <div className=" border border-[#3700ff]/25 rounded-lg flex items-center gap-2.5 p-2.5 flex-1 relative">
-                    <motion.div ref={tabRef} style={{maskImage:maskImage}} className="absolute inset-0 -m-px border border-[#5328f3]/50 rounded-md"></motion.div>
-                    <div className="h-12 w-12 border border-[#3700ff]/25 rounded-md inline-flex items-center justify-center">
+               <div className=" border border-[#3FADFF]/25 rounded-md flex items-center gap-2.5 p-2.5 flex-1 relative">
+                    <motion.div
+                         ref={tabRef}
+                         style={{
+                              maskImage: maskImage,
+                              borderRadius: "0.375rem", // equivalent to rounded-md
+                              borderWidth: "1.5px",
+                              borderStyle: "solid",
+                              borderImage: "linear-gradient(to right, #04F9FF, #3FADFF, #BE08FF) 1",
+                         }}
+                         className="absolute inset-0 -m-px"
+                    ></motion.div>
+                    <div className="h-12 w-12 border border-[#3FADFF]/25 rounded-md inline-flex items-center justify-center">
                          <DotLottiePlayer
                               ref={dotLottieRef}
                               src={tab.icon}
@@ -98,10 +108,10 @@ const FeatureTab = (tab: (typeof tabs)[number]) => {
                     </div>
                     <div className="font-medium">{tab.title}</div>
                     {tab.isNew &&  (
-                         <div className="text-xs rounded-md px-2 py-0.5 bg-[#5328f3] text-white font-semibold">new</div>
+                         <div className="text-xs rounded-md px-2 py-0.5 bg-[linear-gradient(120deg,#04F9FF,#3FADFF,#BE08FF)] text-black font-semibold">new</div>
                     )}
                </div>
-               <div className="md:hidden border border-[#5328f3]/25 py-2.5 rounded-lg bg-black flex items-center justify-center">
+               <div className="md:hidden border border-[#3FADFF]/25 py-2.5 rounded-lg bg-black flex items-center justify-center">
                     <img
                          src={tab.image}
                          className="rounded-lg border border-[#5328f3]/25"
@@ -126,9 +136,9 @@ export const Features = () => {
                               variants={staggerChildren}
                          >
                               <motion.header className="mb-16 text-center" variants={fadeInUp}>
-                                   <p className="text-sm uppercase tracking-wider mb-2 font-medium text-[#6e48fb]">
-                                        It All Starts With A Metric
-                                   </p>
+                              <p className="text-sm uppercase tracking-wider mb-2 font-medium text-[#3FADFF]">
+                                   It All Starts With A Metric
+                              </p>
                                    <h1 className="text-2xl md:text-3xl font-semibold mb-8  bg-clip-text text-transparent bg-gradient-to-r from-gray-400 to-gray-300 leading-10">
                                         Anticipate which metrics you should track, visualize & report.
                                    </h1>
@@ -140,33 +150,14 @@ export const Features = () => {
                                         ))
                                    }
                               </div>
-                              <div className="relative md:border border-[#5328f3]/50 p-2.5 rounded-lg mt-3">
+                              <div className="relative md:border border-[#3FADFF]/50 p-2.5 rounded-lg mt-3">
                                    <div
-                                        className="aspect-video bg-cover border border-[#5328f3]/50 rounded-lg hidden md:block"
+                                        className="aspect-video px-4 bg-cover bg-center border border-[#3FADFF]/50 rounded-lg hidden md:block"
                                         style={{
                                              backgroundImage:`url(/product_image.png)`,
                                         }}
                                    >
-                                        <ScrollParallax isAbsolutelyPositioned>
-                                             <div className="absolute hidden md:block -left-[5rem] bottom-[2rem] border border-[#5328f3]/50 p-1 rounded-lg bg-black">
-                                                  <img
-                                                       src={dartImage.src}
-                                                       className="rounded-lg"
-                                                       width={350}
-                                                       alt="Dart Metrics"
-                                                  />
-                                             </div>
-                                        </ScrollParallax>
-                                        <ScrollParallax isAbsolutelyPositioned>
-                                             <div className="absolute hidden md:block -right-[5rem] top-[2rem] rounded-lg bg-transparent">
-                                                  <img
-                                                       src={tractionImage.src}
-                                                       className="border border-[#5328f3]/50 rounded-lg"
-                                                       width={350}
-                                                       alt="Traction Metrics"
-                                                  />
-                                             </div>
-                                        </ScrollParallax>
+                                        
                                    </div>
                               </div>
                          </motion.div>

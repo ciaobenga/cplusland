@@ -9,6 +9,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isHovered, setIsHovered] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,8 +27,8 @@ export const Header = () => {
                          <a href="/">
                          <img
                               src="/circleplus.png"
-                              width={30}
-                              height={30}
+                              width={35}
+                              height={35}
                               alt="Logo"
                          />
                          </a>
@@ -44,7 +45,12 @@ export const Header = () => {
                          </Link>
                     </nav>
                     <Link href='https://calendly.com/circleplus-io/demo' target='_blank'>
-                         <Button className="hidden md:block bg-[#5328f3] text-white hover:bg-[#6942f6]">Book Demo</Button>
+                         <Button
+                              variant="ghost"
+                              className="hidden md:block bg-[linear-gradient(120deg,#04F9FF,#3FADFF,#BE08FF)] text-black px-4 rounded-md text-sm font-semibold"
+                         >
+                              Book Demo
+                         </Button>
                     </Link>
                     <div className="md:hidden">
                          <Sheet>
@@ -65,7 +71,7 @@ export const Header = () => {
                                              Pricing
                                         </Link>
                                         <Link href="https://calendly.com/circleplus-io/demo" target='_blank'>
-                                             <Button className="w-full bg-[#5328f3] text-white hover:bg-[#6942f6]">Book Demo</Button>
+                                             <Button className="w-full bg-[linear-gradient(120deg,#04F9FF,#3FADFF,#BE08FF)] text-black">Book Demo</Button>
                                         </Link>
                                    </nav>
                               </SheetContent>

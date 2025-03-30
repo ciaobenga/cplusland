@@ -12,7 +12,7 @@ const fadeInUp = {
 
 const FeatureItem: React.FC<{ icon: React.ReactNode; text: string }> = ({ icon, text }) => (
   <div className="flex items-center space-x-3">
-    <div className="text-[#5328f3]">{icon}</div>
+    <div className="text-[#04F9FF]">{icon}</div>
     <span className="text-gray-300">{text}</span>
   </div>
 )
@@ -45,7 +45,7 @@ export const TryCirclePlusSection = () => {
             <div
               className="absolute inset-0 pointer-events-none"
               style={{
-                background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(83, 40, 243, 0.25), transparent 100%)`,
+                    background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(4, 249, 255, 0.10), rgba(63, 173, 255, 0.15), rgba(190, 8, 255, 0.10), transparent 80%)`,
               }}
             />
             <div className="absolute inset-0">
@@ -60,7 +60,7 @@ export const TryCirclePlusSection = () => {
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
               <a href="/" className='z-20'>
                 <motion.button
-                  className="px-8 py-3 bg-[#5328f3] hover:bg-[#6942f6] text-white font-semibold rounded-md transition-colors duration-300 text-base"
+                  className="px-8 py-3  bg-[linear-gradient(120deg,#04F9FF,#3FADFF,#BE08FF)] text-black hover:text-white font-semibold rounded-md transition-colors duration-300 text-base"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >

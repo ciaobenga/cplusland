@@ -97,24 +97,7 @@ export const CoFounder = () => {
             />
           </motion.div>
         </GlassGlow>
-        <AnimatePresence>
-          {isHovered && (
-            <motion.div
-              className="border-none absolute bg-white bg-opacity-50 backdrop-filter backdrop-blur-sm text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm whitespace-nowrap pointer-events-none flex items-center gap-2"
-              initial={{ opacity: 0 }}
-              animate={{
-                opacity: 1,
-                x: mousePosition.x + 10,
-                y: mousePosition.y - 10,
-              }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.4 }}
-            >
-              <Mic className="w-4 h-4" />
-              <span className="font-semibold">Click to Preview</span>
-            </motion.div>
-          )}
-        </AnimatePresence>
+        
       </motion.div>
 
       <AnimatePresence>

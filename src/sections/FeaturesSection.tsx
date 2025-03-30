@@ -39,7 +39,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, icon }) =
   return (
     <motion.div
       ref={cardRef}
-      className="relative bg-black rounded-lg p-6 sm:p-8 shadow-lg overflow-hidden border border-white/20"
+      className="relative bg-black rounded-lg p-6 sm:p-8 shadow-lg overflow-hidden border border-[#3FADFF]/30"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -47,9 +47,9 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, icon }) =
       <svg className="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <linearGradient id="glow-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#5328f3" stopOpacity="0.5" />
-            <stop offset="50%" stopColor="#a855f7" stopOpacity="0.8" />
-            <stop offset="100%" stopColor="#5328f3" stopOpacity="0.5" />
+            <stop offset="0%" stopColor="#04F9FF" stopOpacity="0.8" />
+            <stop offset="50%" stopColor="#3FADFF" stopOpacity="0.8" />
+            <stop offset="100%" stopColor="#BE08FF" stopOpacity="0.5" />
           </linearGradient>
           <filter id="glow">
             <feGaussianBlur stdDeviation="4" result="coloredBlur" />
@@ -75,7 +75,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, icon }) =
       </svg>
       <div className="relative z-10">
         <div className="flex items-center mb-4">
-          <div className="mr-4 text-[#5328f3]">
+          <div className="mr-4 text-[#04F9FF]">
             {icon}
           </div>
           <h3 className="text-base sm:text-base md:text-lg font-bold text-white">{title}</h3>
@@ -109,7 +109,7 @@ export const FeaturesSection = () => {
     <section id="Features" className="py-12 sm:py-16 md:py-18 px-4 bg-gradient-to-b from-black to-transparent">
       <div className="container mx-auto">
         <motion.header className="mb-8 sm:mb-12 md:mb-16 text-center" variants={fadeInUp}>
-          <p className="text-xs sm:text-sm uppercase tracking-wider mb-2 font-medium text-[#6e48fb]">
+          <p className="text-xs sm:text-sm uppercase tracking-wider mb-2 font-medium text-[#3FADFF]">
             Features
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 md:mb-8 bg-clip-text text-transparent bg-gradient-to-r from-gray-400 to-gray-300 leading-tight">

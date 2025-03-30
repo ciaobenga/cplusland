@@ -19,7 +19,7 @@ function SubmitButton() {
     <button
       type="submit"
       disabled={pending}
-      className="px-6 py-2 bg-[#5328f3] hover:bg-[#6942f6] text-white font-semibold rounded-md transition-colors duration-300 flex items-center justify-center disabled:opacity-50"
+      className="px-6 py-2  bg-[linear-gradient(120deg,#04F9FF,#3FADFF,#BE08FF)] text-black hover:text-white font-semibold rounded-md transition-colors duration-300 flex items-center justify-center disabled:opacity-50"
     >
       <span>{pending ? 'Subscribing...' : 'Subscribe'}</span>
       <Send size={18} className="ml-2" />
