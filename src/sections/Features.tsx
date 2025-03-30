@@ -112,14 +112,6 @@ const FeatureTab = (tab: (typeof tabs)[number]) => {
                          <div className="text-xs rounded-md px-2 py-0.5 bg-[linear-gradient(120deg,#04F9FF,#3FADFF,#BE08FF)] text-black font-semibold">new</div>
                     )}
                </div>
-               <div className="md:hidden border border-[#3FADFF]/25 py-2.5 rounded-lg bg-black flex items-center justify-center">
-                    <img
-                         src={tab.image}
-                         className="rounded-lg border border-[#5328f3]/25"
-                         width={300}
-                         alt="Dart Metrics"
-                    />
-               </div>
           </div>
      )
 }
@@ -127,10 +119,10 @@ const FeatureTab = (tab: (typeof tabs)[number]) => {
 export const Features = () => {
 
      return (
-          <section className='flex items-center relative py-20'>
+          <section className='flex items-center relative py-8'>
                <div className='container'>
-                    <div className=" text-white min-h-screen">
-                         <motion.div
+                    <div className=" text-white min-h-full">
+                         <motion.div    
                               className="max-w-7xl mx-auto"
                               initial="initial"
                               animate="animate"
