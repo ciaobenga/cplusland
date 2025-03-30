@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useRef, useState, useEffect, useMemo } from "react"
-import { SaveAll } from "lucide-react"
+import { Cable, SaveAll, Unplug } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Select, SelectContent, SelectItem, SelectTrigger } from "@/components/ui/select"
 import { TooltipProvider } from "@/components/ui/tooltip"
@@ -11,6 +11,7 @@ import { SiStripe, SiAsana, SiHubspot, SiSalesforce } from "react-icons/si"
 import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 import RippleButton from "@/components/ripple-button"
+import { useRouter } from "next/navigation"
 
 // Add this after imports
 const gradientBorderStyles = `
@@ -75,6 +76,7 @@ const GlassGlow = ({ children }: { children: React.ReactNode }) => (
 
 export default function QueryBar() {
   const [query, setQuery] = useState("")
+  const router = useRouter()
   const [mode, setMode] = useState<Mode>("default")
   const [files, setFiles] = useState<File[]>([])
   const [isDragging, setIsDragging] = useState(false)
@@ -158,8 +160,8 @@ export default function QueryBar() {
   const connections: Connection[] = [
     {
       id: "all",
-      name: "View All Connections",
-      icon: <SaveAll className="w-4 h-4" />,
+      name: "Your Connections",
+      icon: <Cable className="w-4 h-4" />,
     },
     {
       id: "stripe",
@@ -214,7 +216,7 @@ export default function QueryBar() {
     }
   }
 
-  const renderLeftContent = () => {
+  const renderLeftContent = ( ) => {
     return (
       <>
         <Select value={selectedConnection || "all"} onValueChange={setSelectedConnection}>
@@ -236,19 +238,28 @@ export default function QueryBar() {
                     className="flex items-center gap-3 text-xs cursor-pointer"
                     value={connection.id}
                   >
-                    <Link href="/support">
-                         <Button
-                              className="w-full h-auto text-xs font-normal hover:bg-transparent"
-                              variant="ghost"
-                              size="icon"
-                         >
-                              {connection.icon}
-                              <span className="text-xs text-white px-2">{connection.name}</span>
-                         </Button>
-                    </Link>
+                    <Button
+                        className="w-full h-auto text-xs font-normal hover:bg-transparent"
+                        variant="ghost"
+                        size="icon"
+                    >
+                        {connection.icon}
+                        <span className="text-xs text-white px-2">{connection.name}</span>
+                    </Button>
                   </SelectItem>
                 ),
             )}
+            <div className="border-t border-gray-700 mt-2 pt-2 px-2">
+              <Button
+                className="w-full h-auto text-xs font-normal hover:bg-transparent"
+                variant="ghost"
+                size="icon"
+                onClick={() => router.push("/connections")}
+              >
+                <Unplug className="w-4 h-4" />
+                <span className="text-xs text-white px-2">View All Connections</span>
+              </Button>
+            </div>
           </SelectContent>
         </Select>
       </>
