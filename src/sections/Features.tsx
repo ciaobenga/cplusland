@@ -6,6 +6,7 @@ import { ScrollParallax } from "react-just-parallax";
 import { DotLottieCommonPlayer, DotLottiePlayer } from "@dotlottie/react-player";
 import tractionImage from '@/assets/traction_image.png';
 import dartImage from '@/assets/plug-and-play.png';
+import FeaturesVideo from "./FeaturesVideo";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -150,16 +151,7 @@ export const Features = () => {
                                         ))
                                    }
                               </div>
-                              <div className="relative md:border border-[#3FADFF]/50 p-2.5 rounded-lg mt-3">
-                                   <div
-                                        className="aspect-video px-4 bg-cover bg-center border border-[#3FADFF]/50 rounded-lg hidden md:block"
-                                        style={{
-                                             backgroundImage:`url(/product_image.png)`,
-                                        }}
-                                   >
-                                        
-                                   </div>
-                              </div>
+                              <FeaturesVideo />
                          </motion.div>
                     </div>
                </div>

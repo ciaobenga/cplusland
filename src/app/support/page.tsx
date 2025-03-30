@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function Terms() {
      return (
           <>
-               <div className="bg-black">
+               <div className="bg-[linear-gradient(210deg,rgba(190,8,255,0.2),#000000,#000000,rgba(4,249,255,0.2))]">
                     <Header />
                     <SupportPage />
                     <Footer />

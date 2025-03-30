@@ -86,6 +86,7 @@ export const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li><FooterLink href="https://disrupting.africa">Legacy Data</FooterLink></li>
               <li><FooterLink href="https://wellfound.com/company/circleplus/jobs">Careers</FooterLink></li>
+              <li><FooterLink href="/connections">Connections</FooterLink></li>
               <li><FooterLink href="/support">Circle+ Support Hub</FooterLink></li>
             </ul>
           </motion.div>
@@ -139,7 +140,7 @@ export const Footer = () => {
           </div>
         </motion.div>
       </div>
-      <div className="bg-black py-4">
+      <div className=" py-4">
         <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex  md:flex-row flex-col gap-2 md:items-center justify-between">
           <div className="w-full md:space-x-4 space-y-2 mb-4 text-sm grid grid-cols-1 md:grid-cols-4">
             <FooterLink href="/privacy">Privacy Policy</FooterLink>
