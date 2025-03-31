@@ -15,7 +15,7 @@ export default function FeaturesVideo() {
      }, [])
 
      return (
-          <div className="relative md:border border-[#3FADFF]/50 p-2.5 rounded-lg mt-3">
+          <div className="relative md:border border-[#3FADFF]/50 py-2.5 rounded-lg mt-3">
                <div className="aspect-video relative border border-[#3FADFF]/50 rounded-lg overflow-hidden">
                     {hasWindow && (
                          <>
