@@ -270,7 +270,7 @@ export default function QueryBar() {
     <TooltipProvider delayDuration={0}>
       <div className="w-full max-w-3xl mx-auto px-4 py-10 z-20">
         <div
-          className={`relative bg-black rounded-lg shadow-md border-none ${
+          className={`relative bg-black rounded-lg shadow-md border-none px-2 md:px-0 ${
             isDragging ? "bg-zinc-800" : ""
           } gradient-border`}
           onDragOver={handleDragOver}
@@ -285,12 +285,11 @@ export default function QueryBar() {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-between gap-2 p-2">
-            <div className="flex-row items-end md:items-start gap-1 hidden md:block bg-zinc-800 p-1 rounded-md">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-2 md:p-2 py-2 w-full">
+            <div className="flex-row flex items-start gap-1 bg-zinc-800 p-1 rounded-md">
               {renderLeftContent()}
             </div>
-            <div className="flex items-end">
-              <div className="w-px h-6 bg-zinc-700 mr-2 hidden sm:block" />
+            <div className="flex justify-center md:items-end">
               <RippleButton />
             </div>
           </div>

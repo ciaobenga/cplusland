@@ -35,8 +35,7 @@ export default function RippleButton() {
       <Button
         ref={buttonRef}
         variant="outline"
-        size="sm"
-        className="border-none text-white relative overflow-visible hover:text-white bg-black hover:bg-black rounded-md hover:shadow-[0_0_20px_rgba(4,249,255,0.9),0_0_30px_rgba(63,173,255,0.6),0_0_40px_rgba(190,8,255,0.4)] transition-all duration-300 group"
+        className="border-none w-full text-white relative overflow-visible hover:text-white bg-black hover:bg-black rounded-md hover:shadow-[0_0_20px_rgba(4,249,255,0.9),0_0_30px_rgba(63,173,255,0.6),0_0_40px_rgba(190,8,255,0.4)] transition-all duration-300 group"
       >
         <span className="absolute inset-0 rounded-sm bg-[linear-gradient(120deg,#04F9FF,#3FADFF,#BE08FF)]"></span>
         <span className="absolute inset-[1px] rounded-sm bg-black"></span>
