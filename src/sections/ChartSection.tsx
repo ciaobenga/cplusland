@@ -93,7 +93,7 @@ export const ChartSection = () => {
                                                   <span className="text-white font-medium text-sm sm:text-base">Product Roadmap</span>
                                              </motion.div>
                                         </a>
-                                        <a href="https://docsend.com/view/t35kum3xqsyg5w5h" target="_blank">
+                                        <a href="/pulse-snapshot">
                                              <motion.div
                                                   className="flex items-center space-x-2 bg-transparent rounded-md p-3 sm:p-4 transition-colors z-20 border border-[#3FADFF]/50"
                                                   whileHover={{ scale: 1.05 }}
