@@ -5,6 +5,7 @@ import type React from "react"
 import { useState, useRef, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 const GlassGlow = ({ children }: { children: React.ReactNode }) => (
   <div className="relative">
@@ -32,8 +33,9 @@ export default function RippleButton() {
 
   return (
     <GlassGlow>
+      <Link
+      href="#Preview">
       <Button
-        ref={buttonRef}
         variant="outline"
         className="border-none w-full text-white  relative overflow-visible hover:text-white bg-black hover:bg-black rounded-md hover:shadow-[0_0_20px_rgba(4,249,255,0.9),0_0_30px_rgba(63,173,255,0.6),0_0_40px_rgba(190,8,255,0.4)] transition-all duration-300 group"
       >
@@ -41,6 +43,7 @@ export default function RippleButton() {
         <span className="absolute inset-[1px] rounded-sm bg-black"></span>
         <span className="relative text-[13px] px-3 md:px-0 z-20">Preview Co.Founder</span>
       </Button>
+      </Link>
     </GlassGlow>
   )
 }
