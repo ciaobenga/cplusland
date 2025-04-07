@@ -57,7 +57,7 @@ const AngelListIcon = () => (
 )
 
 const FooterLink: React.FC<{ href: string; children: React.ReactNode }> = ({ href, children }) => (
-  <Link href={href} className="text-gray-400 hover:text-white transition-colors duration-300">
+  <Link href={href} target="_blank" className="text-gray-400 hover:text-white transition-colors duration-300">
     {children}
   </Link>
 )
