@@ -100,7 +100,7 @@ export const Footer = () => {
               <li><FooterLink href="http://www.foundermode.press">Investor Relations</FooterLink></li>
               <li><FooterLink href="/resources">Articles</FooterLink></li>
               <li><FooterLink href="#">Events</FooterLink></li>
-              <li><FooterLink href="#">Press</FooterLink></li>
+              <li><FooterLink href="https://www.techstars.com/newsroom/techstars-oakland-powered-by-j-p-morgan-announces-spring-2024-class">Press</FooterLink></li>
             </ul>
           </motion.div>
         </div>
