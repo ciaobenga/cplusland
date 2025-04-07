@@ -89,13 +89,11 @@ export default function QueryBar() {
 
   // Array of prompts to cycle through
   const prompts = useMemo(
-    () => [
-      "How can I help you today?",
-      "Ask me anything about your Startup...",
-      "Need help with your Startup metrics?",
-      "What would you like to know about your customers?",
-      "I can answer questions about your Startup...",
-    ],
+      () => [
+        "What metrics matter most for my startup?",
+        "How have our metrics changed since we pivoted?",
+        "Is measuring DAU moving forward a good idea?",
+      ],
     [],
   )
 
