@@ -58,7 +58,7 @@ export const TryCirclePlusSection = () => {
               Join our Circle+ Universe today
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
-              <a href="/" className='z-20'>
+              <a href="/#Preview" className='z-20'>
                 <motion.button
                   className="px-8 py-3  bg-[linear-gradient(120deg,#04F9FF,#3FADFF,#BE08FF)] text-black hover:text-white font-semibold rounded-md transition-colors duration-300 text-base"
                   whileHover={{ scale: 1.05 }}

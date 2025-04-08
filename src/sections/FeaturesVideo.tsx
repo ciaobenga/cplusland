@@ -20,7 +20,7 @@ export default function FeaturesVideo() {
                     {hasWindow && (
                          <>
                               <ReactPlayer
-                                   url="https://player.vimeo.com/video/1070850456?h=0c3371abb6&badge=0&autopause=0&player_id=0&app_id=58479"
+                                   url="https://player.vimeo.com/video/1073251303?badge=0&autopause=0&player_id=0&app_id=58479"
                                    width="100%"
                                    height="100%"
                                    playing={playing}

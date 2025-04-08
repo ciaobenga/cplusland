@@ -69,7 +69,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
               </li>
             ))}
           </ul>
-          <a href="https://app.circleplus.io/sign-up" target="_blank" rel="noreferrer">
+          <a href="https://app.circleplus.io/handler/sign-up" target="_blank" rel="noreferrer">
             <motion.button
               className="w-full py-3 px-4 rounded-lg font-semibold transition-colors duration-300 bg-[linear-gradient(120deg,#04F9FF,#3FADFF,#BE08FF)] text-black hover:text-white border"
               whileHover={{ scale: 1.05 }}
@@ -111,7 +111,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
           </li>
         ))}
       </ul>
-      <a href="https://app.circleplus.io/sign-up" target="_blank" rel="noreferrer">
+      <a href="https://app.circleplus.io/handler/sign-up" target="_blank" rel="noreferrer">
         <motion.button
           className="w-full py-3 px-4 rounded-lg text-white hover:text-white font-semibold transition-colors duration-300 bg-black hover:bg-zinc-900 border border-[#3FADFF]/30"
           whileHover={{ scale: 1.05 }}
