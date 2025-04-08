@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import Link from "next/link"
 
-const GlassGlow = ({ children }: { children: React.ReactNode }) => (
+export const GlassGlow = ({ children }: { children: React.ReactNode }) => (
   <div className="relative">
     <motion.div
       className="absolute inset-0 rounded-[3px]"
