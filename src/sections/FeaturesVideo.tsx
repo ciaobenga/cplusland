@@ -15,6 +15,11 @@ const videos = [
      thumbnail: "/brainstorm.png",
      title: "Brainstorm",
    },
+   {
+    url: "https://player.vimeo.com/video/1074221876?badge=0&autopause=0&player_id=0&app_id=58479",
+    thumbnail: "/playground.png",
+    title: "Playground",
+  },
 ]
 
 export default function FeaturesVideo() {
