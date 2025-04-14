@@ -1,5 +1,6 @@
 import { ChartSection } from "@/sections/ChartSection";
 import { CTASection } from "@/sections/CTASection";
+import { EsoProgramsSection } from "@/sections/EsoPrograms";
 import { Features } from "@/sections/Features";
 import { FeaturesSection } from "@/sections/FeaturesSection";
 import { Footer } from "@/sections/Footer";
@@ -22,6 +23,7 @@ export default function Home() {
         <FeaturesSection />
         <ChartSection />
         <PricingSection />
+        {/* <EsoProgramsSection /> */}
         <CTASection />
         <TryCirclePlusSection />
         <Footer />

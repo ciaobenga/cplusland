@@ -52,7 +52,6 @@ const PricingCard: React.FC<PricingCardProps> = ({
           </h3>
           <p className="text-4xl font-bold">${price}</p>
           <span className="text-xs">billed {isYearly ? "yearly" : "monthly"}</span>
-          {isYearly && <p className="text-sm text-green-500 mt-2">2 months free with yearly billing</p>}
           <ul className="space-y-3 mt-6 mb-8">
             {features.map((feature, index) => (
               <li key={index} className="flex items-start">
@@ -94,7 +93,6 @@ const PricingCard: React.FC<PricingCardProps> = ({
       <h3 className="text-2xl font-bold mb-4 text-white">{title}</h3>
       <p className="text-4xl font-bold">${price}</p>
       <span className="text-xs">billed {isYearly ? "yearly" : "monthly"}</span>
-      {isYearly && <p className="text-sm text-green-500 mt-2">2 months free with yearly billing</p>}
       <ul className="space-y-3 mt-6 mb-8">
         {features.map((feature, index) => (
           <li key={index} className="flex items-start">
@@ -158,8 +156,8 @@ export const PricingSection = () => {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto text-white">
           <PricingCard
             title="Circle+ Lite"
-            monthlyPrice={35}
-            yearlyPrice={350}
+            monthlyPrice={15}
+            yearlyPrice={180}
             features={[
               "For startups in the Pre-Seed to Seed stage",
               "Discover what KPIs matter for your business",
@@ -171,8 +169,8 @@ export const PricingSection = () => {
           />
           <PricingCard
             title="Circle+ Elite"
-            monthlyPrice={85}
-            yearlyPrice={850}
+            monthlyPrice={25}
+            yearlyPrice={300}
             features={[
               "For Startups in the Series A stage onward",
               "Marry your investors' requests & your KPIs",
