@@ -24,14 +24,14 @@ export const Header = () => {
           <div className={`w-full rounded-lg border border-white/15 transition-all duration-300 overflow-hidden px-4 sm:px-2 lg:px-8 backdrop-blur`}>
                <div className="flex items-center justify-between py-2 sm:py-4">
                     <div className='h-10 w-10 rounded-lg inline-flex justify-center items-center '>
-                         <a href="/">
-                         <img
-                              src="/circleplus.png"
-                              width={35}
-                              height={35}
-                              alt="Logo"
-                         />
-                         </a>
+                         <Link href="/">
+                              <img
+                                   src="/circleplus.png"
+                                   width={35}
+                                   height={35}
+                                   alt="Logo"
+                              />
+                         </Link>
                     </div>
                     <nav className="hidden md:flex items-center justify-between space-x-6">
                          <Link href="/#Features" className="text-sm font-medium text-gray-300 hover:text-white">

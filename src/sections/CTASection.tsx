@@ -1,9 +1,9 @@
 'use client'
 
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useActionState } from 'react';
 import { motion } from 'framer-motion'
 import { Send } from 'lucide-react'
-import { useFormState, useFormStatus } from 'react-dom'
+import { useFormStatus } from 'react-dom';
 import { addToNewsletter } from '@/scripts/newsletter'
 
 const fadeInUp = {
@@ -28,7 +28,7 @@ function SubmitButton() {
 }
 
 export const CTASection = () => {
-  const [state, formAction] = useFormState(addToNewsletter, null)
+  const [state, formAction] = useActionState(addToNewsletter, null)
 
   const inputRef = useRef<HTMLInputElement>(null)
 

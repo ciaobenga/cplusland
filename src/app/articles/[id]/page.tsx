@@ -35,7 +35,8 @@ const articles = [
      }
 ]
 
-export default function ArticlePage({ params }: { params: { id: string } }) {
+export default async function ArticlePage(props: { params: Promise<{ id: string }> }) {
+     const params = await props.params;
      const article = articles.find(a => a.id === parseInt(params.id))
 
      if (!article) {
@@ -71,7 +72,8 @@ export default function ArticlePage({ params }: { params: { id: string } }) {
      )
 }
 
-export async function generateMetadata({ params }: { params: { id: string } }) {
+export async function generateMetadata(props: { params: Promise<{ id: string }> }) {
+     const params = await props.params;
      const article = articles.find(a => a.id === parseInt(params.id))
 
      if (!article) {

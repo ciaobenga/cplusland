@@ -3,6 +3,8 @@ import { CreditCard, Trello, MessageSquare, BarChart, Users, Github, ExternalLin
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
+import type { JSX } from "react";
+
 interface IntegrationCardProps {
   name: string
   description: string
