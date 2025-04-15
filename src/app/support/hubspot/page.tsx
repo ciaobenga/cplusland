@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { BarChart2, ArrowLeft, Users, Mail, RefreshCw, AlertCircle } from "lucide-react"
+import { ArrowLeft, Users, Mail, RefreshCw, AlertCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
