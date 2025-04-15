@@ -4,13 +4,11 @@ import {
   ShieldCheck,
   Zap,
   RefreshCw,
-  AlertCircle,
   CheckIcon,
   Clock,
   Calendar,
   HandIcon,
 } from "lucide-react"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import DocHeader from "@/components/support/doc-header"
 import DocSidebar from "@/components/support/doc-sidebar"
