@@ -98,8 +98,8 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 text-white">Resources</h4>
             <ul className="space-y-2 text-sm">
               <li><FooterLink href="http://www.foundermode.press">Investor Relations</FooterLink></li>
-              <li><FooterLink href="/resources">Articles</FooterLink></li>
-              <li><FooterLink href="#">Events</FooterLink></li>
+              <li><FooterLink href="http://www.foundermode.press">Articles</FooterLink></li>
+              <li><FooterLink href="http://www.foundermode.press">Events</FooterLink></li>
               <li><FooterLink href="https://www.techstars.com/newsroom/techstars-oakland-powered-by-j-p-morgan-announces-spring-2024-class">Press</FooterLink></li>
             </ul>
           </motion.div>
