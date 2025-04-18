@@ -84,7 +84,7 @@ export const Footer = () => {
           >
             <h4 className="text-lg font-semibold mb-4 text-white">Company</h4>
             <ul className="space-y-2 text-sm">
-              <li><FooterLink href="https://disrupting.africa">Legacy Data</FooterLink></li>
+              <li><FooterLink href="https://www.foundermode.press">White Paper</FooterLink></li>
               <li><FooterLink href="https://wellfound.com/company/circleplus/jobs">Careers</FooterLink></li>
               <li><FooterLink href="/connections">Connections</FooterLink></li>
               <li><FooterLink href="/support">Circle+ Support Hub</FooterLink></li>
