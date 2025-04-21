@@ -23,7 +23,7 @@ export default function Home() {
         <FeaturesSection />
         <ChartSection />
         <PricingSection />
-        {/* <EsoProgramsSection /> */}
+        <EsoProgramsSection />
         <CTASection />
         <TryCirclePlusSection />
         <Footer />

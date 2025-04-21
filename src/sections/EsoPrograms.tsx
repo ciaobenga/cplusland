@@ -33,7 +33,7 @@ export const EsoProgramsSection = () => {
   }, [])
 
      return (
-          <section className="py-20 px-4 bg-black">
+          <section id="eso-programs" className="py-20 px-4 bg-black">
                <div className="container mx-auto max-w-4xl">
                     <motion.div
                          className="bg-black rounded-lg shadow-lg overflow-hidden border border-white/20 relative"
