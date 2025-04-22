@@ -24,7 +24,7 @@ export default function AlternativeOffersSection() {
           {/* Accelerator Offer */}
           <div className="relative group">
             <div className="absolute inset-0 bg-[rgb(190,8,255)] rounded-2xl blur opacity-15 transition duration-300"></div>
-            <div className="relative bg-black  rounded-2xl overflow-hidden">
+            <div className="relative bg-black backdrop-blur rounded-2xl overflow-hidden">
               <div className="h-3 bg-[rgb(190,8,255)]"></div>
               <div className="p-6 md:p-8">
                 <div className="flex items-center mb-4">
@@ -32,7 +32,7 @@ export default function AlternativeOffersSection() {
                     <Rocket className="h-6 w-6 text-[rgb(190,8,255)]" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white">Techstars Alumni</h3>
+                    <h3 className="text-xl font-bold text-white">For Techstars</h3>
                     <p className="text-[rgb(200,100,255)] font-medium">3 Months Free</p>
                   </div>
                 </div>
@@ -126,7 +126,7 @@ export default function AlternativeOffersSection() {
               {
                 question: "How do you verify my Techstars status?",
                 answer:
-                  "We verify Techstars alumni through your Techstars email address or company email associated with your Techstars program. Verification typically takes 24hrs maximum.",
+                  "We verify Techstars alumni through your company email associated with your Techstars program. Verification typically takes between 2 - 24hrs.",
               },
               {
                 question: "What happens after my free period?",
@@ -136,7 +136,7 @@ export default function AlternativeOffersSection() {
               {
                 question: "When will the Princeton program be available?",
                 answer:
-                  "We're currently finalizing our partnership with Princeton University. The program will be available to Princeton students starting next semester.",
+                  "We're currently finalizing our partnership with Princeton University. The program will be available to Princeton University students starting May 1st, 2025.",
               },
             ].map((faq, i) => (
               <div key={i} className="bg-zinc-800/50 rounded-xl p-6">
