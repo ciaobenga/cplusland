@@ -60,7 +60,7 @@ export default function AlternativeOffersSection() {
                   size="lg"
                   asChild
                 >
-                  <Link href="/verify-new">
+                  <Link href="https://app.circleplus.io/eso-alumni">
                     Verify Techstars Status
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
