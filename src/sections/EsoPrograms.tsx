@@ -64,7 +64,7 @@ export const EsoProgramsSection = () => {
                                    If you're part of the Techstars Alumni Network, you're eligible for a range of tailored benefits and opportunities.
                               </p>
                               <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
-                                   <a href="/#Preview" target="_blank" className='z-20'>
+                                   <a href="/programs" className='z-20'>
                                         <motion.button
                                              className="px-8 py-3  bg-[linear-gradient(120deg,#04F9FF,#3FADFF,#BE08FF)] text-black hover:text-white font-semibold rounded-md transition-colors duration-300 text-base"
                                              whileHover={{ scale: 1.05 }}

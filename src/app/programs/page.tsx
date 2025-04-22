@@ -1,10 +1,10 @@
 import { Footer } from "@/sections/Footer";
 import { Header } from "@/sections/Header";
-import SupportPage from "@/sections/SupportPage";
+import ProgramsPage from "@/sections/Programs";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Support Hub - Circle+",
+  title: "Programs - Circle+",
 };
 
 export default function Terms() {
@@ -12,7 +12,7 @@ export default function Terms() {
           <>
                <div className="bg-black bg-[linear-gradient(210deg,rgba(190,8,255,0.5),#000000,#000000,#000000,#000000,#000000,rgba(4,249,255,0.5))]">
                     <Header />
-                    <SupportPage />
+                    <ProgramsPage />
                     <Footer />
                </div>
           </>

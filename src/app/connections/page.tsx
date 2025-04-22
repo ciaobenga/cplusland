@@ -10,12 +10,10 @@ export const metadata: Metadata = {
 export default function Connections() {
      return (
           <>
-               <div className="bg-black">
-                    <div className="bg-[linear-gradient(210deg,rgba(190,8,255,0.2),#000000,#000000,rgba(4,249,255,0.2))]">
-                         <Header />
-                         <IntegrationsPage />
-                         <Footer />
-                    </div>
+               <div className="bg-black bg-[linear-gradient(210deg,rgba(190,8,255,0.5),#000000,#000000,#000000,#000000,#000000,rgba(4,249,255,0.5))]">
+                    <Header />
+                    <IntegrationsPage />
+                    <Footer />
                </div>
           </>
      );

@@ -2,21 +2,6 @@
 
 import type React from "react"
 
-import {
-  BarChart4,
-  Calendar,
-  CreditCard,
-  FileSpreadsheet,
-  Landmark,
-  LayoutDashboard,
-  MessageSquare,
-  Mountain,
-  NotebookPen,
-  PieChart,
-  ShoppingCart,
-  Trello,
-  Users2,
-} from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { SiAsana, SiBasecamp, SiCalendly, SiGoogle, SiGoogleanalytics, SiGooglesheets, SiHubspot, SiNotion, SiQuickbooks, SiSalesforce, SiSlack, SiStripe, SiXero, SiZoho } from "react-icons/si"
 import { MondayLogoBlack } from "@/components/monday-logo-black"
@@ -191,7 +176,7 @@ export function IntegrationCards() {
           <div className="w-full border-t border-muted-foreground/20"></div>
         </div>
         <div className="relative flex flex-col items-center justify-center">
-          <span className="bg-background px-8 text-5xl font-bold tracking-tight text-foreground">
+          <span className="px-8 text-5xl font-bold tracking-tight text-white">
             Seamless{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#BE08FF] to-[#04F9FF]">
               Connections
@@ -213,7 +198,7 @@ function IntegrationCard({ integration }: { integration: Integration }) {
   const Icon = integration.icon
 
   return (
-    <Card className="group relative overflow-hidden transition-all duration-300 hover:shadow-lg dark:bg-background/60 dark:backdrop-blur-sm dark:border-muted-foreground/20 hover:scale-[1.02]">
+    <Card className="group relative overflow-hidden transition-all duration-300 hover:shadow-lg bg-white/5 backdrop-blur-sm border-none hover:scale-[1.02]">
       <div
         className="h-2"
         style={{ background: `linear-gradient(to right, ${integration.color}, ${integration.secondaryColor})` }}
@@ -230,10 +215,10 @@ function IntegrationCard({ integration }: { integration: Integration }) {
           >
             <div className="shimmer-container">
               <Icon className="h-6 w-6 relative z-10" style={{ color: integration.color }} />
-              <div className="shimmer absolute inset-0 opacity-0 group-hover:opacity-100"></div>
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100"></div>
             </div>
           </div>
-          <CardTitle className="text-xl font-semibold tracking-tight">{integration.name}</CardTitle>
+          <CardTitle className="text-xl text-white font-semibold tracking-tight">{integration.name}</CardTitle>
         </div>
       </CardHeader>
       <CardContent>
