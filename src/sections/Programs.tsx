@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { GraduationCap, Rocket, ArrowRight, CheckCircle, Zap, Clock } from "lucide-react"
-import { IconSparkles } from '@tabler/icons-react';
+import { IconJetpack, IconSparkles } from '@tabler/icons-react';
 import Link from "next/link"
 
 export default function AlternativeOffersSection() {
@@ -29,7 +29,7 @@ export default function AlternativeOffersSection() {
               <div className="p-6 md:p-8">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 rounded-full bg-[rgba(190,8,255,0.15)] flex items-center justify-center mr-4">
-                    <Rocket className="h-6 w-6 text-[rgb(190,8,255)]" />
+                    <IconJetpack className="h-6 w-6 text-[rgb(190,8,255)]" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white">For Techstars</h3>
@@ -60,7 +60,7 @@ export default function AlternativeOffersSection() {
                   size="lg"
                   asChild
                 >
-                  <Link href="https://app.circleplus.io/eso-alumni">
+                  <Link href="https://app.circleplus.io/programs?category=ACCELERATOR">
                     Verify Techstars Status
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
